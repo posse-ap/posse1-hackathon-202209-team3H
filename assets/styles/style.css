@@ -52,62 +52,109 @@ header{
 
 /* Birthday */
 .birthday_hero{
+  padding: 0 24px;
+  margin: 0 auto;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1200px;
+    width: 100%;
+    height: 100px;
+}
+.birthday_hero_catch_inner{
+  width: 500px;
+  height: 100px;
+border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .birthday_hero_catch{
-  display: flex;
-  margin: 0 auto;
-  max-width: 100%;
-  height: 100px;
-  position: relative;
-  background-color: antiquewhite;
+  font-size: 70px;
+  font-weight: bold;
+  color: pink;
 }
 .birthday_hero_text{
-  display: flex;
-  margin: 0 auto;
-  max-width: 100%;
+  width: 500px;
   height: 100px;
-  position: relative;
-  background-color: rgb(164, 100, 16);
+  border-radius: 10px;
+  background-color: rgb(223, 166, 241);
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: left;
+}
+.birthday_name{
+  text-align: center;
 }
 
+  /* ここからcontent */
 .birthday_content{
-  margin-top: 96px;
+  margin-top: 60px;
 }
 .birthday_content_manth_list{
   padding: 0 24px;
   margin: 0 auto;
     max-width: 1200px;
     width: 100%;
-    height: 100px;
+    height: 70px;
     background-color: rgb(217, 122, 122);
+    text-align: center;
 }
 .birthday_content_manth_list_inner{
   margin: 10px 10px;
-  color: #666;
-    font-size: 70px;
-    letter-spacing: 0.1em;
+  color: #fff;
+    font-size: 60px;
+    letter-spacing: 0.2em;
     font-weight: bold;
     line-height: 1.5;
 }
+
+
 .birthday_content_manth{
   margin: 10px 10px;
 }
 .birthday_content_manth_box{
-  background-color: aqua;
+  background-color: rgb(254, 254, 254);
 }
 .birthday_content_manth_title{
   font-size: 60px;
-  background-color: #eee;
-  border: solid 1px #666;
+  background-color: #fff;
+  /* border: solid 1px #666; */
+  color: #a4c6ff;
 }
+.birthday_content_manth_item_box{
+  background-color: #a4c6ff;
+  display: flex;
+
+}
+.birthday_content_manth_day{
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  /* margin-left: 10px; */
+  background-color: #a4c6ff;
+}
+.birthday_content_manth_name{
+  width: 500px;
+  height: 60px;
+  text-align: center;
+  /* font-size: 30px; */
+  background-color: #a4c6ff;
+}
+
 .birthday_content_manth_text_img{
   background-color: bisque;
   display: flex;
 }
-.birthday_content_manth_item_box{
-  background-color: rgb(219, 219, 23);
+.birthday_content_manth_img{
+  width: 31%;
+  height: auto;
 }
+.birthday_content_manth_text{
+  margin: 10px 10px;
+}
+
 /* 100秒スピーチ */
 .speech_hero_title{
   display: flex;
