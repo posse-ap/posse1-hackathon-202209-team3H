@@ -130,6 +130,9 @@ header.is-open .header_hamburger::after{
     font-weight: bold;
     line-height: 1.5;
 }
+.birthday_content_manth{
+  margin: 10px 10px;
+}
 .birthday_content_manth_box{
   background-color: aqua;
 }
