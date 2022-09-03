@@ -15,6 +15,7 @@ header{
   width: 100%;
   box-sizing: border-box;
   position: fixed;
+  position: relative;
 }
 
 .header_sns{
@@ -46,6 +47,7 @@ header{
 }
 
 /* トップページ */
+
 
 
 /* Birthday */
@@ -81,6 +83,26 @@ header{
     background-color: rgb(217, 122, 122);
 }
 /* 100秒スピーチ */
+.speech_hero_title{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 3%;
+}
+
+.hero_title_label{
+  padding: 2%;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.speech_content_guidelines_list{
+  text-align: center;
+  font-size: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 
 /* ブラシス */
 
