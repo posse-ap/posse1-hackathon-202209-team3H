@@ -6,6 +6,25 @@ ul{
   margin: 0;
   padding: 0;
 }
+
+header{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 24px;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.header_sns{
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 16px;
+}
+
+
 .sns_instagram, .sns_twitter{
   align-items: center;
   border: solid 1px #eee;
@@ -64,3 +83,24 @@ ul{
 /* 100秒スピーチ */
 
 /* ブラシス */
+
+
+.footer_inner{
+  text-align: center;
+
+}
+
+.footer_sns{
+  text-align: center;
+  align-items: center;
+}
+
+.footer_sns_list{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer_copyright{
+  text-align: center;
+}
