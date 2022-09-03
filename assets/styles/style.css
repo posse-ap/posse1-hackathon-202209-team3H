@@ -81,6 +81,9 @@ ul{
   background-color: bisque;
   display: flex;
 }
+.birthday_content_manth_item_box{
+  background-color: rgb(219, 219, 23);
+}
 /* 100秒スピーチ */
 
 /* ブラシス */
