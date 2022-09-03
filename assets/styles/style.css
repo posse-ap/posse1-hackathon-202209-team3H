@@ -32,12 +32,35 @@ ul{
 /* Birthday */
 .birthday_hero{
   display: flex;
+}
+.birthday_hero_catch{
+  display: flex;
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 100%;
+  height: 100px;
   position: relative;
   background-color: antiquewhite;
 }
+.birthday_hero_text{
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 100px;
+  position: relative;
+  background-color: rgb(164, 100, 16);
+}
 
+.birthday_content{
+  margin-top: 96px;
+}
+.birthday_content_manth_list{
+  padding: 0 24px;
+  margin: 0 auto;
+    max-width: 1032px;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
 /* 100秒スピーチ */
 
 /* ブラシス */
