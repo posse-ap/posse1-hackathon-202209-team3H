@@ -25,7 +25,6 @@ header{
   gap: 16px;
 }
 
-
 .sns_instagram, .sns_twitter{
   align-items: center;
   border: solid 1px #eee;
@@ -44,6 +43,47 @@ header{
 .icon_instagram{
   width: 24px;
   height: 24px;
+}
+
+.header_hamburger{
+  height: 40px;
+  position: fixed;
+  right: 19px;
+  width: 40px;
+  z-index: 100;
+  background-color: #fff;
+  border: #fff;
+}
+.header_hamburger::before, .header_hamburger::after{
+  background-color: #333;
+  content: "";
+  display: block;
+  height: 1.5px;
+  left: 50%;
+  position: absolute;
+  transition: transform 0.4s, top 0.4s;
+  width: 34px;
+}
+.header_hamburger::before{
+  top: 12px;
+  transform: translate(-50%, 0);
+}
+.header_hamburger::after{
+  top: 27px;
+  transform: translate(-50%, 0);
+}
+header.is-open .header_hamburger::before{
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+header.is-open .header_hamburger::after{
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+@media (min-width: 720px){
+  .header_hamburger{
+    display: none;
+  }
 }
 
 /* トップページ */
