@@ -134,6 +134,24 @@ header {
 
 body{
   background:linear-gradient(#1e90ff, #f0ffff);
+
+  /* animation: cloud 25s linear infinite;
+  background: url(../img/top_img/E10F6C37-533D-4973-B8EC-B8DDE0C370D6.png),
+    linear-gradient(#bbe4fa, hsl(171, 40%, 91%));
+  background-position-x: 0%;
+  background-position-y: 35%;
+  background-repeat: repeat-x;
+  background-size: 800px auto;
+  height: 560px;
+}
+/* 2. keyframeを使って、雲が流れるように。 */
+/* @keyframes cloud {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 800px;
+  } */ 
 }
 
 /* トップページ */
@@ -142,7 +160,7 @@ body{
 }
 
 .top_hero {
-  display: flex;
+  /* display: flex; */
   /* margin: auto 10%; */
   /* margin-bottom: 20%; */
   /* justify-content: center; */
@@ -156,23 +174,37 @@ body{
 
 }
 
+.top_hero >h2{
+  margin-top: 7%;
+  display: flex;
+  flex-flow: column;
+  /* position: absolute; */
+
+}
+
 .hero_title_label{
   font-size: 60px;
   margin-bottom: 5%;
-  margin-top: -5%;
+  margin-top: -8%;
+  margin-left: 3%;
+  color: #fff;
+  text-shadow: 2px 4px 3px gainsboro;
 }
 
 .hero_title_inline{
-  font-size: 20px;
-  margin-left: 38%;
-  margin-right: -12%;
+  font-size: 25px;
+  /* margin-left: 38%;
+  margin-right: -12%; */
+  text-align: center;
+  text-shadow: 2px 3px 3px gray;
 }
 
 .hero_title_name{
-  font-size: 10px;
+  font-size: 15px;
   font-weight: bold;
-  margin-left: 70%;
+  margin-left: 65%;
   margin-top: 2%;
+  text-shadow: 2px 3px 3px gray;
 }
 
 .top_content {
