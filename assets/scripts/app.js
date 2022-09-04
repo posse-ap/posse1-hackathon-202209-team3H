@@ -12,8 +12,11 @@
   });
 
   // いいねボタン
-  const likeButton = document.getElementsByClassName('js-likeButton');
-  likeButton.addEventListener('click', () => {
-    likeButton.classList
-  })
+  const like = document.getElementsByName('js-like');
+  const likeButton = document.getElementsByName('js-likeButton');
+  for (let i = 0; i < like.length; i++) {
+    like[i].addEventListener('click', () => {
+      likeButton[i].classList.toggle('is-pushed')
+    })
+  }
 }
