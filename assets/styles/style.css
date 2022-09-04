@@ -533,12 +533,15 @@ body{
 
 .speech_content_img {
   width: 31%;
-  height: auto;
+  height: 30%;
+  margin: auto 0;
 }
 
 .speech_content_text {
   margin: 10px 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  overflow: auto;
+  max-height:360px;
 }
 
 
@@ -824,6 +827,9 @@ footer.is-changed .footer_sns_list {
     /* スピーチ */
     .speech_content_guideline_list{
       font-size: 15px;
+    }
+    .speech_content_text{
+      max-height: 190px;
     }
 
     /* いいねボタン */
