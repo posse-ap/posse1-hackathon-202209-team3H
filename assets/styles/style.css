@@ -16,6 +16,8 @@ header{
   box-sizing: border-box;
   position: fixed;
   position: relative;
+  position: fixed;
+  z-index: 20;
 }
 
 .header_sns{
@@ -47,7 +49,9 @@ header{
 }
 
 /* トップページ */
-
+.top_content{
+  margin: 10% auto;
+}
 
 
 /* Birthday */
@@ -103,24 +107,65 @@ header{
   display: flex;
 }
 /* 100秒スピーチ */
+.speech_hero{
+  display: flex;
+}
+
 .speech_hero_title{
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 3%;
+  margin: 10% auto;
+  max-width: 100%;
+  height: 100px;
+  position: relative;
+  background-color: antiquewhite;
 }
-
-.hero_title_label{
-  padding: 2%;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.speech_content_guidelines_list{
-  text-align: center;
-  font-size: 50px;
+.birthday_hero_text{
   display: flex;
-  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 100px;
+  position: relative;
+  background-color: rgb(164, 100, 16);
+}
+
+.speech_content{
+  margin: 2%;
+}
+.speech_content_guidelines_list{
+  padding: 0 24px;
+  margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(217, 122, 122);
+    
+
+    color: #666;
+    font-size: 70px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+}
+.speech_content_box>.speech_content_title{
+  margin: 3% 2%; 
+   color: #00ffff;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.birthday_content_manth_box{
+  background-color: aqua;
+}
+.birthday_content_manth_title{
+  font-size: 60px;
+  background-color: #eee;
+  border: solid 1px #666;
+}
+.birthday_content_manth_text_img{
+  background-color: bisque;
+  display: flex;
 }
 
 
