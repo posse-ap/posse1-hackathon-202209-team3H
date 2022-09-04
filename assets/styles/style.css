@@ -137,7 +137,7 @@ header{
   /* height: 100px; */
 }
 .birthday_hero_catch_inner{
-  width: 500px;
+  max-width: 500px;
   height: 100px;
   border-radius: 10px;
   background-color: #fff;
@@ -227,10 +227,16 @@ header{
 }
 .birthday_content_manth_img{
   width: 31%;
-  height: auto;
+  height: 30%;
 }
 .birthday_content_manth_text{
+  height: 30%;
   margin: 10px 10px;
+  overflow: auto;
+}
+.birthday_content_manth_text_from{
+  font-size: 14px;
+  margin-left: 10px;
 }
 
 /* 100秒スピーチ */
@@ -350,12 +356,62 @@ footer.is-changed .footer_sns_list{
   transform: translate(-50%);
 }
 
-@media screen and (max-width: 720px){ 
+@media screen and (max-width: 720px){
+  /* ハンバーガー */
+  .header_sns{
+    display: none;
+  }
+  .header_hamburger{
+    display: block;
+    height: 40px;
+    position: fixed;
+    right: 19px;
+    width: 40px;
+    z-index: 100;
+    background-color: #fff;
+    border: #fff;
+  }
+  .header_hamburger::before, .header_hamburger::after{
+    background-color: #333;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transition: transform 0.4s, top 0.4s;
+    width: 34px;
+  }
+  .header_hamburger::before{
+    top: 12px;
+    transform: translate(-50%, 0);
+  }
+  .header_hamburger::after{
+    top: 27px;
+    transform: translate(-50%, 0);
+  }
+  header.is-open .header_hamburger::before{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  header.is-open .header_hamburger::after{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  header.is-open .menu{
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+  }
+
+  /* バースデー */
   .birthday_hero_catch{
     margin-top: 30%;
     /* font-size: 80px; */
     justify-content: center;
-    margin-left: auto;
+    /* margin-left: auto; */
+    width: 100%;
   }
 
   .birthday_content_manth_list{
@@ -372,12 +428,18 @@ footer.is-changed .footer_sns_list{
     word-break: normal;
   }
 
+  /* フッター */
+  .footer_fixed_buttons{
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 480px){ 
+  /* バースデー */
   .birthday_hero_catch{
     margin-top: 30%;
-    font-size: 80px;
+    font-size: 70px;
   }
 
   .birthday_hero_text_box{
@@ -387,15 +449,13 @@ footer.is-changed .footer_sns_list{
   .birthday_content_manth_list{
     margin-bottom: 10%;
     justify-content: space-between;
-    margin-left: 7%;
-    margin-right: -2%;
     width: auto;
     height: auto;
   }
 
-.birthday_content_manth_list_inner{
-  font-size: 36px;
-  word-break: normal;
-}
+  .birthday_content_manth_list_inner{
+    font-size: 36px;
+    word-break: normal;
+  }
 
 }
