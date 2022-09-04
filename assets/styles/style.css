@@ -18,6 +18,7 @@ header{
   position: relative;
   position: fixed;
   z-index: 20;
+  top: 0;
 }
 
 .header_sns{
@@ -49,6 +50,15 @@ header{
 
 .header_hamburger{
   display: none;
+}
+
+.menu{
+  display: none;
+}
+.menu_item{
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 15px;
 }
 
 /* スマホ・タブレットサイズ */
@@ -92,6 +102,17 @@ header{
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
+  header.is-open .menu{
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.hide{
+  display: none;
 }
 
 /* トップページ */
@@ -141,12 +162,6 @@ header{
   color: lightpink;
   justify-content: center;
 }
-/* .birthday_hero_name{
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  color: lightpink;
-} */
 
   /* ここからcontent */
 .birthday_content{
