@@ -437,6 +437,9 @@ header {
   /* height: 70px; */
   background-color: rgb(217, 122, 122);
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .event_content_month{
   margin: 10px 10px;
@@ -466,14 +469,12 @@ header {
 }
 .event_content_day{
   width: 100px;
-  height: 60px;
   text-align: center;
   /* margin-left: 10px; */
   background-color: #a4c6ff;
 }
 .event_content_name{
   width: 500px;
-  height: 60px;
   text-align: center;
   /* font-size: 30px; */
   background-color: #a4c6ff;
@@ -484,12 +485,22 @@ header {
   display: flex;
 }
 .event_content_img{
-  width: 31%;
+  width: 50%;
   height: auto;
+}
+
+.event_content_img_box{
+  display: flex;
+  width: 70%;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
 }
 .event_content_text{
   margin: 10px 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  overflow: auto;
 }
 
 
