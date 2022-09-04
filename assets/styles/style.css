@@ -846,6 +846,38 @@ footer.is-changed .footer_sns_list {
 
   @media screen and (max-width: 480px) {
 
+  /* トップページ */
+  .hero_title_label{
+    margin-top: 10%;
+    font-size: 50px;
+  }
+
+  .hero_title_inline{
+    word-break: keep-all;
+    font-size: 20px;
+  }
+
+  .hero_title_name{
+    font-size: 10px;
+    margin-left: 30%;
+    padding-top: 2%;
+  }
+
+  .top_content_text_birthday{
+    font-size: 35px;
+    margin-left: 55%;
+  }
+
+  .top_content_text_speach{
+    font-size: 30px;
+    padding: none;
+  }
+
+  .top_content_text_event{
+    font-size: 35px;
+    margin-left: 55%;
+  }
+
     /* バースデー */
     .birthday_hero_catch {
       margin-top: 30%;
