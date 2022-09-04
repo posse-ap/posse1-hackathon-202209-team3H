@@ -350,8 +350,28 @@ footer.is-changed .footer_sns_list{
   transform: translate(-50%);
 }
 
-@media screen and (min-width: 481px){ 
- 
+@media screen and (max-width: 720px){ 
+  .birthday_hero_catch{
+    margin-top: 30%;
+    /* font-size: 80px; */
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  .birthday_content_manth_list{
+    margin-bottom: 10%;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: auto;
+    height: auto;
+  }
+
+  .birthday_content_manth_list_inner{
+    font-size: 60px;
+    word-break: normal;
+  }
+
 }
 
 @media screen and (max-width: 480px){ 
@@ -366,9 +386,6 @@ footer.is-changed .footer_sns_list{
 
   .birthday_content_manth_list{
     margin-bottom: 10%;
-    /* flex-direction: column; */
-    /* flex-flow: column wrap; */
-    /* word-break: keep-all; */
     justify-content: space-between;
     margin-left: 7%;
     margin-right: -2%;
