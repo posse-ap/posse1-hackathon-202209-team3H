@@ -382,12 +382,12 @@ body{
 }
 
 .birthday_content_manth_box {
-  background-color: rgb(254, 254, 254);
+  /* background-color: rgb(254, 254, 254); */
 }
 
 .birthday_content_manth_title {
   font-size: 60px;
-  background-color: #fff;
+  /* background-color: #fff; */
   /* border: solid 1px #666; */
   color: #a4c6ff;
 }
@@ -475,7 +475,7 @@ body{
   border-radius: 30px;
 }
 .speech_content_guidelines_box{
-  background-color: #0071bc;
+  /* background-color: #0071bc; */
   width: 90%;
   margin: 0 auto;
 }
@@ -494,12 +494,12 @@ body{
 }
 
 .speech_content_box {
-  background-color: rgb(254, 254, 254);
+  /* background-color: rgb(254, 254, 254); */
 }
 
 .speech_content_title {
-  font-size: 60px;
-  background-color: #fff;
+  font-size: 40px;
+  /* background-color: #fff; */
   /* border: solid 1px #666; */
   color: #a4c6ff;
 }
