@@ -10,8 +10,4 @@
     main.classList.toggle('hide');
     footer.classList.toggle('is-changed');
   });
-
-  // // トップページ　幕
-  // const topHero = document.getElementById('js-topHero');
-  // setTimeout(() => {topHero.classList.add('-visible')}, 2000)
 }
