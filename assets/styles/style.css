@@ -1,13 +1,14 @@
-a{
+a {
   text-decoration: none;
 }
-ul{
+
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-header{
+header {
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -21,14 +22,15 @@ header{
   top: 0;
 }
 
-.header_sns{
+.header_sns {
   display: flex;
   margin-left: auto;
   align-items: center;
   gap: 16px;
 }
 
-.sns_instagram, .sns_twitter{
+.sns_instagram,
+.sns_twitter {
   align-items: center;
   border: solid 1px #eee;
   border-radius: 50%;
@@ -38,38 +40,43 @@ header{
   height: 50px;
   width: 50px;
   justify-content: center;
-} 
-.icon_twitter{
+}
+
+.icon_twitter {
   width: 25px;
   height: 20px;
 }
-.icon_instagram{
+
+.icon_instagram {
   width: 24px;
   height: 24px;
 }
 
-.header_hamburger{
+.header_hamburger {
   display: none;
 }
 
-.menu{
+.menu {
   display: none;
 }
-.menu_item{
+
+.menu_item {
   text-align: center;
   font-size: 35px;
   margin-bottom: 15px;
 }
-.menu_item_link{
+
+.menu_item_link {
   color: #0071bc;
 }
 
 /* スマホ・タブレットサイズ */
-@media (max-width: 720px){
-  .header_sns{
+@media (max-width: 720px) {
+  .header_sns {
     display: none;
   }
-  .header_hamburger{
+
+  .header_hamburger {
     display: block;
     height: 40px;
     position: fixed;
@@ -79,7 +86,9 @@ header{
     background-color: #fff;
     border: #fff;
   }
-  .header_hamburger::before, .header_hamburger::after{
+
+  .header_hamburger::before,
+  .header_hamburger::after {
     background-color: #333;
     content: "";
     display: block;
@@ -89,23 +98,28 @@ header{
     transition: transform 0.4s, top 0.4s;
     width: 34px;
   }
-  .header_hamburger::before{
+
+  .header_hamburger::before {
     top: 12px;
     transform: translate(-50%, 0);
   }
-  .header_hamburger::after{
+
+  .header_hamburger::after {
     top: 27px;
     transform: translate(-50%, 0);
   }
-  header.is-open .header_hamburger::before{
+
+  header.is-open .header_hamburger::before {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
   }
-  header.is-open .header_hamburger::after{
+
+  header.is-open .header_hamburger::after {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
-  header.is-open .menu{
+
+  header.is-open .menu {
     display: block;
     position: absolute;
     top: 150px;
@@ -114,21 +128,58 @@ header{
   }
 }
 
-.hide{
+.hide {
   display: none;
 }
 
 /* トップページ */
-.top_content{
+.top_content {
   margin: 10% auto;
+}
+
+.top_hero {
+  display: flex;
+  margin: auto 10%;
+  justify-content: center;
+}
+
+.top_hero_title {
+  margin-top: 15%;
+  display: flex;
+  flex-flow: column;
+}
+
+
+/****** Base style. ******/
+body {
+  /* margin: 0; */
+}
+
+.top_content {
+  display: flex;
+  gap: 50px;
+  margin-right: auto;
+  /* text-align:  center;    文字中央寄せ */
+  padding: 30%;
+  /* 余白指定 */
+  /* border: solid 2px;      枠線指定 */
+  background-image: url(../img/top_img/DX\ 集合写真.jpg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+.top_content_text {
+  color: aquamarine;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 
 /* Birthday */
-.birthday_hero{
+.birthday_hero {
   padding: 0 24px;
   margin: 0 auto;
-  display:flex;
+  display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
@@ -136,7 +187,8 @@ header{
   /* width: 100%; */
   /* height: 100px; */
 }
-.birthday_hero_catch_inner{
+
+.birthday_hero_catch_inner {
   max-width: 500px;
   height: 100px;
   border-radius: 10px;
@@ -146,18 +198,21 @@ header{
   align-items: center;
   margin: 10% auto;
 }
-.birthday_hero_catch{
+
+.birthday_hero_catch {
   font-size: 100px;
   font-weight: bold;
   /* margin-top: 10%; */
   color: pink;
 }
-.birthday_hero_text_box{
+
+.birthday_hero_text_box {
   border-radius: 10px;
   background-color: #fff;
   margin: 0 auto;
 }
-.birthday_hero_text{
+
+.birthday_hero_text {
   margin-top: 0;
   font-size: 20px;
   font-weight: bold;
@@ -166,11 +221,12 @@ header{
   justify-content: center;
 }
 
-  /* ここからcontent */
-.birthday_content{
+/* ここからcontent */
+.birthday_content {
   margin-top: 60px;
 }
-.birthday_content_manth_list{
+
+.birthday_content_manth_list {
   padding: 0 24px;
   margin: 0 auto;
   max-width: 1200px;
@@ -179,7 +235,8 @@ header{
   background-color: rgb(217, 122, 122);
   text-align: center;
 }
-.birthday_content_manth_list_inner{
+
+.birthday_content_manth_list_inner {
   margin: 10px 10px;
   color: #fff;
   font-size: 60px;
@@ -189,31 +246,36 @@ header{
 }
 
 
-.birthday_content_manth{
+.birthday_content_manth {
   margin: 10px 10px;
 }
-.birthday_content_manth_box{
+
+.birthday_content_manth_box {
   background-color: rgb(254, 254, 254);
 }
-.birthday_content_manth_title{
+
+.birthday_content_manth_title {
   font-size: 60px;
   background-color: #fff;
   /* border: solid 1px #666; */
   color: #a4c6ff;
 }
-.birthday_content_manth_item_box{
+
+.birthday_content_manth_item_box {
   background-color: #a4c6ff;
   display: flex;
 
 }
-.birthday_content_manth_day{
+
+.birthday_content_manth_day {
   width: 100px;
   height: 60px;
   text-align: center;
   /* margin-left: 10px; */
   background-color: #a4c6ff;
 }
-.birthday_content_manth_name{
+
+.birthday_content_manth_name {
   width: 500px;
   height: 60px;
   text-align: center;
@@ -221,32 +283,35 @@ header{
   background-color: #a4c6ff;
 }
 
-.birthday_content_manth_text_img{
+.birthday_content_manth_text_img {
   background-color: bisque;
   display: flex;
 }
-.birthday_content_manth_img{
+
+.birthday_content_manth_img {
   width: 31%;
   height: 30%;
   margin: auto 0;
 }
-.birthday_content_manth_text{
+
+.birthday_content_manth_text {
   height: 30%;
   margin: 10px 10px;
   overflow: auto;
   max-height: 250px;
 }
-.birthday_content_manth_text_from{
+
+.birthday_content_manth_text_from {
   font-size: 14px;
   margin-left: 10px;
 }
 
 /* 100秒スピーチ */
 
-.speech_hero{
+.speech_hero {
   padding: 0 24px;
   margin: 0 auto;
-  display:flex;
+  display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
@@ -254,7 +319,8 @@ header{
   /* width: 100%; */
   /* height: 100px; */
 }
-.speech_hero_catch_inner{
+
+.speech_hero_catch_inner {
   width: 500px;
   height: 100px;
   border-radius: 10px;
@@ -264,18 +330,21 @@ header{
   align-items: center;
   margin: 10% auto;
 }
-.speech_hero_catch{
+
+.speech_hero_catch {
   font-size: 70px;
   font-weight: bold;
   /* margin-top: 10%; */
   color: pink;
 }
-.speech_hero_text_box{
+
+.speech_hero_text_box {
   border-radius: 10px;
   background-color: #fff;
   margin: 0 auto;
 }
-.speech_hero_text{
+
+.speech_hero_text {
   margin-top: 0;
   font-size: 20px;
   font-weight: bold;
@@ -284,10 +353,11 @@ header{
   justify-content: center;
 }
 
-.speech_content{
+.speech_content {
   margin-top: 60px;
 }
-.speech_content_guidelines_list{
+
+.speech_content_guidelines_list {
   padding: 0 24px;
   margin: 0 auto;
   max-width: 1200px;
@@ -296,7 +366,8 @@ header{
   background-color: rgb(217, 122, 122);
   text-align: center;
 }
-.speech_content_guideline_list{
+
+.speech_content_guideline_list {
   margin: 10px 10px;
   color: #fff;
   font-size: 60px;
@@ -305,31 +376,36 @@ header{
   line-height: 1.3;
 }
 
-.speech_content_inner{
+.speech_content_inner {
   margin: 10px 10px;
 }
-.speech_content_box{
+
+.speech_content_box {
   background-color: rgb(254, 254, 254);
 }
-.speech_content_title{
+
+.speech_content_title {
   font-size: 60px;
   background-color: #fff;
   /* border: solid 1px #666; */
   color: #a4c6ff;
 }
-.speech_content_item_box{
+
+.speech_content_item_box {
   background-color: #a4c6ff;
   display: flex;
 
 }
-.speech_content_day{
+
+.speech_content_day {
   width: 100px;
   height: 60px;
   text-align: center;
   /* margin-left: 10px; */
   background-color: #a4c6ff;
 }
-.speech_content_name{
+
+.speech_content_name {
   width: 500px;
   height: 60px;
   text-align: center;
@@ -337,15 +413,17 @@ header{
   background-color: #a4c6ff;
 }
 
-.speech_content_text_img{
+.speech_content_text_img {
   background-color: bisque;
   display: flex;
 }
-.speech_content_img{
+
+.speech_content_img {
   width: 31%;
   height: auto;
 }
-.speech_content_text{
+
+.speech_content_text {
   margin: 10px 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -354,65 +432,79 @@ header{
 /* ブラシス */
 
 
-.footer_fixed_buttons{
+.footer_fixed_buttons {
   position: fixed;
   bottom: 16px;
   right: 16px;
   left: auto;
 }
-.footer_fixed_button{
+
+.footer_fixed_button {
   align-items: center;
   background-color: #2053f9;
   padding: 10px;
   text-align: center;
   border-bottom: solid 3px #fff;
 }
-.footer_fixed_link{
+
+.footer_fixed_link {
   color: #fff;
   font-weight: 500;
 }
-.footer_inner{
+
+.footer_inner {
   margin-top: 100px;
   margin-bottom: 25px;
   text-align: center;
 }
-.footer_sns{
+
+.footer_sns {
   text-align: center;
   align-items: center;
 }
-.footer_inner{
+
+.footer_inner {
   text-align: center;
 
 }
-.footer_sns{
+
+.footer_sns {
   text-align: center;
   align-items: center;
 }
-.footer_sns_list{
+
+.footer_sns_list {
   display: flex;
   justify-content: center;
   gap: 16px;
 }
-.footer_copyright{
+
+.footer_copyright {
   text-align: center;
 }
 
-footer.is-changed .footer_fixed_buttons, footer.is-changed .footer_logo, footer.is-changed .footer_copyright{
+footer.is-changed .footer_fixed_buttons,
+footer.is-changed .footer_logo,
+footer.is-changed .footer_copyright {
   display: none;
 }
-footer.is-changed .footer_sns_list{
+
+footer.is-changed .footer_sns_list {
   position: absolute;
   bottom: 100px;
   left: 50%;
   transform: translate(-50%);
 }
 
-@media screen and (max-width: 720px){
+
+@media screen and (max-width: 720px) {
+
   /* ハンバーガー */
-  .header_sns{
+  .header_sns {
     display: none;
   }
-  .header_hamburger{
+
+  .header_hamburger {
     display: block;
     height: 40px;
     position: fixed;
@@ -422,7 +514,9 @@ footer.is-changed .footer_sns_list{
     background-color: #fff;
     border: #fff;
   }
-  .header_hamburger::before, .header_hamburger::after{
+
+  .header_hamburger::before,
+  .header_hamburger::after {
     background-color: #333;
     content: "";
     display: block;
@@ -432,23 +526,28 @@ footer.is-changed .footer_sns_list{
     transition: transform 0.4s, top 0.4s;
     width: 34px;
   }
-  .header_hamburger::before{
+
+  .header_hamburger::before {
     top: 12px;
     transform: translate(-50%, 0);
   }
-  .header_hamburger::after{
+
+  .header_hamburger::after {
     top: 27px;
     transform: translate(-50%, 0);
   }
-  header.is-open .header_hamburger::before{
+
+  header.is-open .header_hamburger::before {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
   }
-  header.is-open .header_hamburger::after{
+
+  header.is-open .header_hamburger::after {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
-  header.is-open .menu{
+
+  header.is-open .menu {
     display: block;
     position: absolute;
     top: 150px;
@@ -457,59 +556,72 @@ footer.is-changed .footer_sns_list{
   }
 
   /* バースデー */
-  .birthday_hero_catch{
-    margin-top: 30%;
-    /* font-size: 80px; */
-    justify-content: center;
-    /* margin-left: auto; */
-    width: 100%;
+
+  @media screen and (max-width: 720px) {
+    .birthday_hero_catch {
+      margin-top: 30%;
+      /* font-size: 80px; */
+      justify-content: center;
+      /* margin-left: auto; */
+      width: 100%;
+    }
+
+    .birthday_content_manth_list {
+      margin-bottom: 10%;
+      justify-content: space-between;
+      margin-left: 5%;
+      margin-right: 5%;
+      width: auto;
+      height: auto;
+    }
+
+    .birthday_content_manth_list_inner {
+      font-size: 60px;
+      word-break: normal;
+    }
+
+    .birthday_content_manth_text {
+      max-height: 120px;
+    }
+
+    /* フッター */
+    .footer_fixed_buttons {
+      display: none;
+    }
+
   }
 
-  .birthday_content_manth_list{
-    margin-bottom: 10%;
-    justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: auto;
-    height: auto;
-  }
+  @media screen and (max-width: 480px) {
 
-  .birthday_content_manth_list_inner{
-    font-size: 60px;
-    word-break: normal;
-  }
-  .birthday_content_manth_text{
-    max-height: 120px;
-  }
+    /* バースデー */
+    .birthday_hero_catch {
+      margin-top: 30%;
+      font-size: 70px;
+    }
 
-  /* フッター */
-  .footer_fixed_buttons{
-    display: none;
+    .birthday_hero_text_box {
+      justify-content: space-between;
+    }
+
+    .birthday_content_manth_list {
+      margin-bottom: 10%;
+      justify-content: space-between;
+      width: auto;
+      height: auto;
+    }
+
+    .birthday_content_manth_list_inner {
+      font-size: 36px;
+      word-break: normal;
+    }
+
+    /* 100秒 */
+
+
+    /* イベント */
+
+
+    /* ブラシス */
+
   }
-
-}
-
-@media screen and (max-width: 480px){ 
-  /* バースデー */
-  .birthday_hero_catch{
-    margin-top: 30%;
-    font-size: 70px;
-  }
-
-  .birthday_hero_text_box{
-    justify-content: space-between;
-  }
-
-  .birthday_content_manth_list{
-    margin-bottom: 10%;
-    justify-content: space-between;
-    width: auto;
-    height: auto;
-  }
-
-  .birthday_content_manth_list_inner{
-    font-size: 36px;
-    word-break: normal;
-  }
-
 }
