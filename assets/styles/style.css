@@ -246,37 +246,20 @@ header{
 .speech_hero{
   padding: 0 24px;
   margin: 0 auto;
-  display:flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: space-around;
+  padding-top: 100px;
   max-width: 1200px;
-  /* width: 100%; */
-  /* height: 100px; */
-}
-.speech_hero_catch_inner{
-  width: 500px;
-  height: 100px;
-  border-radius: 10px;
   background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10% auto;
 }
 .speech_hero_catch{
   font-size: 70px;
   font-weight: bold;
   /* margin-top: 10%; */
   color: pink;
-}
-.speech_hero_text_box{
-  border-radius: 10px;
-  background-color: #fff;
-  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
 }
 .speech_hero_text{
-  margin-top: 0;
+  /* margin-top: 0; */
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -349,6 +332,99 @@ header{
   margin: 10px 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+
+/* いべんと */
+.event_hero{
+  padding: 0 24px;
+  margin: 0 auto;
+  padding-top: 100px;
+  max-width: 1200px;
+  background-color: #fff;
+}
+.event_hero_catch{
+  font-size: 70px;
+  font-weight: bold;
+  /* margin-top: 10%; */
+  color: pink;
+  text-align: center;
+  justify-content: center;
+}
+.event_hero_text{
+  /* margin-top: 0; */
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: lightpink;
+  justify-content: center;
+}
+
+.event_content{
+  margin-top: 60px;
+}
+.event_content_month_list{
+  padding: 0 24px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  /* height: 70px; */
+  background-color: rgb(217, 122, 122);
+  text-align: center;
+}
+.event_content_month{
+  margin: 10px 10px;
+  color: #fff;
+  font-size: 60px;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.event_content_inner{
+  margin: 10px 10px;
+}
+.event_content_box{
+  background-color: rgb(254, 254, 254);
+}
+.event_content_title{
+  font-size: 60px;
+  background-color: #fff;
+  /* border: solid 1px #666; */
+  color: #a4c6ff;
+}
+.event_content_item_box{
+  background-color: #a4c6ff;
+  display: flex;
+
+}
+.event_content_day{
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  /* margin-left: 10px; */
+  background-color: #a4c6ff;
+}
+.event_content_name{
+  width: 500px;
+  height: 60px;
+  text-align: center;
+  /* font-size: 30px; */
+  background-color: #a4c6ff;
+}
+
+.event_content_text_img{
+  background-color: bisque;
+  display: flex;
+}
+.event_content_img{
+  width: 31%;
+  height: auto;
+}
+.event_content_text{
+  margin: 10px 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 
 
 /* ブラシス */
