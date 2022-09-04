@@ -288,9 +288,12 @@ header {
   padding: 0;
   padding-top: 2px;
   font-size: 18px;
+  font-weight: 700;
+  color: #fd5e83;
 }
 .like_button.is-pushed{
   background-color: #fd5e83;
+  color: #eee;
 }
 
 .birthday_content_manth_text_img {

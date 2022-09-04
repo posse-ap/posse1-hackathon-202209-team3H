@@ -13,5 +13,7 @@
 
   // いいねボタン
   const likeButton = document.getElementsByClassName('js-likeButton');
-
+  likeButton.addEventListener('click', () => {
+    likeButton.classList
+  })
 }
