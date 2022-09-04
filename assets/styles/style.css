@@ -340,7 +340,7 @@ header{
   text-align: center;
 }
 
-footer.is-changed .footer_fixed_buttons, .footer_logo, .footer_copyright{
+footer.is-changed .footer_fixed_buttons, footer.is-changed .footer_logo, footer.is-changed .footer_copyright{
   display: none;
 }
 footer.is-changed .footer_sns_list{
