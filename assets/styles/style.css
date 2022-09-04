@@ -228,11 +228,13 @@ header{
 .birthday_content_manth_img{
   width: 31%;
   height: 30%;
+  margin: auto 0;
 }
 .birthday_content_manth_text{
   height: 30%;
   margin: 10px 10px;
   overflow: auto;
+  max-height: 250px;
 }
 .birthday_content_manth_text_from{
   font-size: 14px;
@@ -475,6 +477,9 @@ footer.is-changed .footer_sns_list{
   .birthday_content_manth_list_inner{
     font-size: 60px;
     word-break: normal;
+  }
+  .birthday_content_manth_text{
+    max-height: 120px;
   }
 
   /* フッター */
