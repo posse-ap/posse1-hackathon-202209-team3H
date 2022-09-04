@@ -133,6 +133,10 @@ header {
 }
 
 body{
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.top_body{
   background:linear-gradient(#1e90ff, #f0ffff);
 
   /* animation: cloud 25s linear infinite;
@@ -155,6 +159,7 @@ body{
 }
 
 /* トップページ */
+
 .top_content {
   margin: 10% auto;
 }
@@ -681,10 +686,12 @@ body{
 
 .footer_fixed_button {
   align-items: center;
-  background-color: #2053f9;
+  background-color: #008BBB;
   padding: 10px;
+  margin-top: 3px;
   text-align: center;
-  border-bottom: solid 3px #fff;
+  /* border-bottom: solid 3px #fff; */
+  border-radius: 30px;
 }
 
 .footer_fixed_link {
