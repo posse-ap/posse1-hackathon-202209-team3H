@@ -277,6 +277,22 @@ header {
   background-color: #a4c6ff;
 }
 
+.birthday_content_manth_like{
+  margin: auto 10px;
+}
+.like_button{
+  border: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 0;
+  padding-top: 2px;
+  font-size: 18px;
+}
+.like_button.is-pushed{
+  background-color: #fd5e83;
+}
+
 .birthday_content_manth_text_img {
   background-color: bisque;
   display: flex;

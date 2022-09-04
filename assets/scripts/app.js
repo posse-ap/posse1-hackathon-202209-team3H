@@ -10,4 +10,8 @@
     main.classList.toggle('hide');
     footer.classList.toggle('is-changed');
   });
+
+  // いいねボタン
+  const likeButton = document.getElementsByClassName('js-likeButton');
+
 }
