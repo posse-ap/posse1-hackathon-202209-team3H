@@ -323,10 +323,16 @@ header{
 }
 
 
-@media screen and (min-width: 481px)　{ 
-
+@media screen and (min-width: 481px){ 
+ 
 }
 
-@media screen and (max-width: 480px)　{ 
-  
+@media screen and (max-width: 480px){ 
+  .birthday_hero_catch{
+    margin-top: 30%;
+  }
+
+  .birthday_hero_text_box{
+    justify-content: space-between;
+  }
 }
