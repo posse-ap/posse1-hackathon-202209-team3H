@@ -149,12 +149,6 @@ header {
   flex-flow: column;
 }
 
-
-/****** Base style. ******/
-body {
-  /* margin: 0; */
-}
-
 .top_content {
   display: flex;
   gap: 50px;
