@@ -330,6 +330,7 @@ header{
 @media screen and (max-width: 480px){ 
   .birthday_hero_catch{
     margin-top: 30%;
+    font-size: 80px;
   }
 
   .birthday_hero_text_box{
@@ -341,8 +342,16 @@ header{
     /* flex-direction: column; */
     /* flex-flow: column wrap; */
     /* word-break: keep-all; */
-    margin: 0 3%;
+    justify-content: space-between;
+    margin-left: 7%;
+    margin-right: -2%;
     width: auto;
     height: auto;
   }
+
+.birthday_content_manth_list_inner{
+  font-size: 36px;
+  word-break: normal;
+}
+
 }
