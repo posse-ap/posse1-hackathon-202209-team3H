@@ -132,6 +132,10 @@ header {
   display: none;
 }
 
+body{
+  background:linear-gradient(#1e90ff, #f0ffff);
+}
+
 /* トップページ */
 .top_content {
   margin: 10% auto;
@@ -139,14 +143,36 @@ header {
 
 .top_hero {
   display: flex;
-  margin: auto 10%;
-  justify-content: center;
+  /* margin: auto 10%; */
+  /* margin-bottom: 20%; */
+  /* justify-content: center; */
 }
 
 .top_hero_title {
   margin-top: 15%;
   display: flex;
   flex-flow: column;
+  /* position: absolute; */
+
+}
+
+.hero_title_label{
+  font-size: 60px;
+  margin-bottom: 5%;
+  margin-top: -5%;
+}
+
+.hero_title_inline{
+  font-size: 20px;
+  margin-left: 38%;
+  margin-right: -12%;
+}
+
+.hero_title_name{
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: 70%;
+  margin-top: 2%;
 }
 
 .top_content {
@@ -210,8 +236,8 @@ header {
 }
 
 .top_content_birthday{
-  background-image: url(../img/top_img/DX\ 集合写真.jpg);
-  padding: 10%;
+  background-image: url(../img/top_img/S__25853977.jpg);
+  padding: 9.5%;
   /* font-size: 30px; */
   /* max-width: 100%;
   max-height: 100%; */
@@ -222,8 +248,8 @@ header {
 }
 
 .top_content_speach{
-  background-image: url(../img/top_img/DX\ 集合写真.jpg);
-  padding: 10%;
+  background-image: url(../img/top_img/BB3E3968-9C59-46DF-8A4A-3E0B22126F60.jpg);
+  padding: 8%;
   /* max-width: 100%;
   max-height: 100%; */
   background-repeat: no-repeat;
