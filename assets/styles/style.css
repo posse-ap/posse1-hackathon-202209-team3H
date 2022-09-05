@@ -564,8 +564,6 @@ body{
   width: 100%;
   height: auto;
 }
-
-
 .brosis_content_inner{
   margin: 10px 10px;
 }
@@ -574,8 +572,6 @@ body{
 }
 .brosis_content_title{
   font-size: 60px;
-  /* background-color: #fff; */
-  /* border: solid 1px #666; */
   color: #a4c6ff;
 }
 .brosis_content_item_box{
@@ -591,6 +587,9 @@ body{
   margin-left: 5px;
   background-color: #a4c6ff;
   border-radius: 30px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .brosis_content_name_box{
   width: 500px;
@@ -600,23 +599,18 @@ body{
   justify-content: center;
   text-align: center;
   font-size: 130%;
-  /* font-size: 30px; */
   background-color: #a4c6ff;
 }
-
 .brosis_content_text_img{
   background-color: bisque;
   display: flex;
-
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  text-align: center; */
 }
 .brosis_content_img{
   width: 30%;
   height: 30%;
   height: auto;
+  max-width: 200px;
+  margin: auto 0;
 }
 .brosis_content_img {
   transition-duration: .4s;
@@ -862,6 +856,15 @@ footer.is-changed .footer_sns_list {
   .brosis_content_bro_list_box, .brosis_content_sis_list_box{
     padding: 5px 15px 0;
   }
+  .brosis_content_title{
+    font-size: 35px;
+  }
+  .brosis_content_day_box{
+    font-size: 13px;
+  }
+  .brosis_content_name_box{
+    font-size: 18px;
+  }
 
   /* フッター */
   .footer_fixed_buttons {
@@ -932,5 +935,13 @@ footer.is-changed .footer_sns_list {
   .event_hero{
     padding: 0;
     margin-top: 20%;
+  }
+
+  /* ブラシス */
+  .brosis_content_day_box{
+    font-size: 10px;
+  }
+  .brosis_content_name_box{
+    font-size: 15px;
   }
 }
