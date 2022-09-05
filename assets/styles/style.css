@@ -851,6 +851,25 @@ footer.is-changed .footer_sns_list {
       margin-right: 10px;
     }
 
+    /* イベント */
+    .event_hero{
+      padding: 0;
+    }
+
+    .event_hero_catch{
+      margin-top: 15%;
+      margin-left: 6%;
+    }
+
+    .event_content_month_list{
+      padding: 3%;
+    }
+
+    .event_content_box{
+      margin-left: 2%;
+      margin-right: -4%;
+    }
+
     /* フッター */
     .footer_fixed_buttons {
       display: none;
