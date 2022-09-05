@@ -226,12 +226,18 @@ body{
   margin: 0 auto;
   max-width: 1200px;
   background-color: #a4c6ff;
-  text-align: center;
+  display: block;
+  /* text-align: center;
   justify-content: center;
   border-radius: 30px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+}
+.birthday_content_manth_list_blok{
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 .birthday_content_manth_list_inner {
   margin: 10px 10px;
@@ -601,8 +607,9 @@ body{
   background-color: #a4c6ff;
 }
 .brosis_content_text_img{
-  background-color: bisque;
+  background-color: #FFF5EE;
   display: flex;
+  border-bottom: solid 1px #a4c6ff;
 }
 .brosis_content_img{
   width: 30%;
