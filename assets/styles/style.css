@@ -271,6 +271,12 @@ body{
   padding: 0 0 10px;
   /* margin-right: 20%; */
 }
+.top_content_birthday,.top_content_speach,.top_content_event {
+  transition-duration: .4s;
+}
+.top_content_birthday:hover,.top_content_speach:hover,.top_content_event:hover {
+  transform: scale(1.1);
+}
 
 .top_content_birthday{
   background-image: url(../img/top_img/S__25853977.jpg);
@@ -462,6 +468,7 @@ body{
   margin: 0 auto;
   padding-top: 100px;
   max-width: 1200px;
+  background-image: url(../img/100秒スピーチ/);
   background-color: #fff;
 }
 
