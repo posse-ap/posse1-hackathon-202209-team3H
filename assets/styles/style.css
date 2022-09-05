@@ -700,6 +700,43 @@ footer.is-changed .footer_sns_list {
   transform: translate(-50%);
 }
 
+/* ブラシス */
+.brosis_content{
+  bottom: 2%;
+  right: 5%;
+  position: fixed;
+  border-style: solid;
+  border-width: 0;
+  box-sizing: border-box;
+  display: block;
+
+  border-radius: 16px;
+  box-shadow: 4px 4px 20px rgb(0 0 0 / 15%);
+  padding: 14px 18px 14px 20px;
+  background-color: #ff8c00;
+  margin-left: 2%;
+  justify-content: flex-end;
+}
+
+.brosis_content>img{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: solid 3px #ffd700;
+}
+
+.brosis_content_text{
+  margin-left: 13px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+  line-height: 1.3;
+  text-align: center;
+  margin: 0;
+  /* text-align: right; */
+}
+
 
 @media screen and (max-width: 720px) {
   /* ハンバーガー */
