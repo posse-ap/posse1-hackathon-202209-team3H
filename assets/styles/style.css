@@ -811,7 +811,7 @@ footer.is-changed .footer_sns_list {
     height: auto;
   }
   .birthday_content_manth_list_inner {
-    font-size: 60px;
+    font-size: 30px;
     word-break: normal;
   }
   .birthday_content_manth_text {
@@ -847,6 +847,9 @@ footer.is-changed .footer_sns_list {
   }
   .event_content_month_list{
     padding: 3%;
+  }
+  .event_content_month{
+    font-size: 30px;
   }
   .event_content_img_box{
     max-height: 150px;
@@ -932,7 +935,7 @@ footer.is-changed .footer_sns_list {
     height: auto;
   }
   .birthday_content_manth_list_inner {
-    font-size: 36px;
+    font-size: 25px;
     word-break: normal;
   }
 
@@ -940,6 +943,9 @@ footer.is-changed .footer_sns_list {
   .event_hero{
     padding: 0;
     margin-top: 20%;
+  }
+  .event_content_month{
+    font-size: 25px;
   }
 
   /* ブラシス */
