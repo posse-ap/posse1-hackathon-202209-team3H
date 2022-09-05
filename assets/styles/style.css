@@ -59,56 +59,6 @@ header {
 .menu_item_link {
   color: #0071bc;
 }
-/* スマホ・タブレットサイズ */
-@media (max-width: 720px) {
-  .header_sns {
-    display: none;
-  }
-  .header_hamburger {
-    display: block;
-    height: 40px;
-    position: fixed;
-    right: 19px;
-    width: 40px;
-    z-index: 100;
-    background-color: #fff;
-    border: #fff;
-  }
-  .header_hamburger::before,
-  .header_hamburger::after {
-    background-color: #333;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    transition: transform 0.4s, top 0.4s;
-    width: 34px;
-  }
-  .header_hamburger::before {
-    top: 12px;
-    transform: translate(-50%, 0);
-  }
-  .header_hamburger::after {
-    top: 27px;
-    transform: translate(-50%, 0);
-  }
-  header.is-open .header_hamburger::before {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-  header.is-open .header_hamburger::after {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-  header.is-open .menu {
-    display: block;
-    position: absolute;
-    top: 150px;
-    left: 0;
-    right: 0;
-  }
-}
 .hide {
   display: none;
 }
