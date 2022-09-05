@@ -121,31 +121,31 @@ body{
 .top_content_text_birthday {
   font-weight: bold;
   font-size: 50px;
-  text-shadow: 1px 1px 2px aqua;
+  text-shadow: 1px 1px 2px #00fa9a;
   align-items: center;
   font-weight: bold;
   color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 1px #888;
+  -webkit-text-stroke: 2px 	#7FFFD4;
   padding: 0 0 10px;
 }
 .top_content_text_speach {
   font-weight: bold;
   font-size: 45px;
-  text-shadow: 1px 1px 2px aqua;
+  text-shadow: 1px 1px 2px #00fa9a;
   align-items: center;
   font-weight: bold;
   color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 1px #888;
+  -webkit-text-stroke: 2px #7FFFD4;
   padding: 0 0 10px;
 }
 .top_content_text_event {
   font-weight: bold;
   font-size: 42px;
-  text-shadow: 1px 1px 2px aqua;
+  text-shadow: 1px 1px 2px #00fa9a;
   align-items: center;
   font-weight: bold;
   color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 1px #888;
+  -webkit-text-stroke: 2px #7FFFD4;
   padding: 0 0 10px;
 }
 .top_content_birthday,.top_content_speach,.top_content_event {
