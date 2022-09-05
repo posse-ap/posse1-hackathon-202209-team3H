@@ -678,7 +678,7 @@ body{
 }
 footer.is-changed .footer_fixed_buttons,
 footer.is-changed .footer_logo,
-footer.is-changed .footer_copyright, footer.is-changed .brosis_content {
+footer.is-changed .footer_copyright, footer.is-changed .footer_brosis_content {
   display: none;
 }
 footer.is-changed .footer_sns_list {
