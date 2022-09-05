@@ -537,18 +537,14 @@ body{
   margin-top: 60px;
   display: block;
 }
-.brosis_content_bro_list_box{
+.brosis_content_bro_list_box, .brosis_content_sis_list_box{
   padding: 0 24px;
   margin: 5px auto;
   max-width: 1200px;
   border-radius: 30px;
   background-color: #a4c6ff	;
 }
-.brosis_content_bro_list_inner{
-  /* background-color: bisque;
-  /* display: flex; */
-}
-.brosis_content_bro_list{
+.brosis_content_bro_list, .brosis_content_sis_list{
   width: 100%;
   height: auto;
   display: flex;
@@ -559,12 +555,12 @@ body{
   margin: auto 0;
   /* background-color: #008BBB; */
 }
-.brosis_content_bro_list_img_box{
+.brosis_content_bro_list_img_box, .brosis_content_sis_list_img_box{
   /* background-color: #333; */
   width: 19%;
   margin: 1px 1px;
 }
-.brosis_content_bro_img{
+.brosis_content_bro_img, .brosis_content_sis_img{
   width: 100%;
   height: auto;
 }
@@ -816,8 +812,6 @@ footer.is-changed .footer_sns_list {
   .birthday_content_manth_list {
     margin-bottom: 10%;
     justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
     width: auto;
     height: auto;
   }
@@ -864,12 +858,17 @@ footer.is-changed .footer_sns_list {
     margin: auto 0;
   }
 
+  /* ブラシス */
+  .brosis_content_bro_list_box, .brosis_content_sis_list_box{
+    padding: 5px 15px 0;
+  }
+
   /* フッター */
   .footer_fixed_buttons {
     display: none;
   }
 
-  /* ブラシス */
+  /* ブラシスボタン */
   .footer_brosis_content{
     padding: 10px;
   }
