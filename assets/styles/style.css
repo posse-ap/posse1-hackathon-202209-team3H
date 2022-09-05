@@ -503,6 +503,7 @@ body{
   font-size: 18px;
   font-weight: 700;
   color: #fd5e83;
+  cursor: pointer;
 }
 .like_button.is-pushed{
   background-color: #fd5e83;
