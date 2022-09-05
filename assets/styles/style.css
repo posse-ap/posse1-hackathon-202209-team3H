@@ -387,7 +387,6 @@ body{
 }
 .speech_content_text {
   margin: 10px 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   overflow: auto;
   max-height:360px;
 }
@@ -485,7 +484,6 @@ body{
   width: auto;
   transition-duration: .4s;
 }
-
 .event_content_text{
   margin: 10px 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -574,60 +572,74 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* overflow: auto; */
   margin: auto 0;
-  /* background-color: #008BBB; */
 }
-.brosis_content_bro_list_img_box, .brosis_content_sis_list_img_box{
-  /* background-color: #333; */
+/* ホバー */
+.box{
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.hover {
+  position: relative;
   width: 19%;
-  margin: 1px 1px;
+  height:auto;
+  /* margin: 0 auto; */
+  /* padding: 0 1px; */
+}
+.hover .hover-img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+.hover-img img {
+  width: 100%;
+  height: 100%;
+}
+.hover .hover-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0,0,0,0.65);
+  /*透明にして表示させない*/
+  opacity: 0;
+  /*ホバーの動き方*/
+  transition: .3s ease-in-out;
+}
+.hover .hover-text .text1 {
+  font-size: 15px;
+  padding: 20% 10%;
+}
+a.text1{
+  font-size: 22px;
+  /* padding: 20% %; */
+  text-align: center;
   display: block;
+  text-decoration: none;
+  color: #fff;
+}
+/* .hover .hover-text .text2 {
+  font-size: 16px;
+  padding: 0 20px;
+} */
+/*ホバーエフェクト*/
+.hover:hover .hover-text {
+  /*不透明にして表示*/
+  opacity: 1;
+}
+.box{
+  display: flex;
+  width: 1200px;
 }
 .brosis_content_bro_img, .brosis_content_sis_img{
   width: 100%;
   height: auto;
 }
-
-/* ホバー */
-/* .c-bnr.bg {
-  position: relative;
-  overflow: hidden;
-}
-.c-bnr.bg::before,
-.c-bnr.bg::after {
-  content: "";
-  display: block;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  margin: auto;
-  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
-  opacity: 0;
-}
-.c-bnr.bg::before {
-  background: rgba(190,91,70,.6);
-  width: 100%;
-  height: 100%;
-}
-.c-bnr.bg::after {
-  color: #fff;
-  content: "Read More";
-  font-size: 22px;
-  font-weight: bold;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  bottom: 0;
-  right: 0;
-}
-
-.c-bnr.bg:hover::before,
-.c-bnr.bg:hover::after {
-  opacity: 1;
-} */
 
 .brosis_content_inner{
   margin: 10px 10px;
@@ -684,7 +696,6 @@ body{
 .brosis_content_img:hover {
   transform: scale(1.1);
 }
-
 .brosis_content_img_box{
   width: 100%;
   height: auto;
@@ -692,7 +703,6 @@ body{
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 .brosis_content_text{
   margin: 10px 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -767,8 +777,15 @@ footer.is-changed .footer_sns_list {
   box-shadow: 4px 4px 20px rgb(0 0 0 / 15%);
   padding: 14px 18px 14px 20px;
   background-color: #ff8c00;
+
+  transform-style: preserve-3d;
+	transition: 1s;
 }
-.footer_brosis_content>img{
+.footer_brosis_content:hover{
+  transform: rotateY(180deg);
+}
+
+.brosis_front>img{
   width: 110px;
   height: 110px;
   border-radius: 50%;
@@ -783,6 +800,47 @@ footer.is-changed .footer_sns_list {
   line-height: 1.3;
   text-align: center;
   margin: 0;
+
+  backface-visibility: hidden;
+}
+
+.brosis_front{
+  z-index: 2;
+}
+
+.brosis_back{
+  position: absolute;
+  width: 290px;
+  /* height: 40px; */
+  backface-visibility: hidden;
+  background-color: #ff8c00;
+  /* box-shadow: 4px 4px 20px rgb(0 0 0 / 15%); */
+  padding: 14px 18px 14px 20px;
+  /* for text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  margin-left: -5%;
+  margin-top: -41%;
+
+  transform: translate(-40%, -37%);
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}
+
+.brosis_back>img{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: solid 5px #ffd700;
+}
+
+.brosis_back>.back_text{
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 3%;
 }
 
 
@@ -956,6 +1014,21 @@ footer.is-changed .footer_sns_list {
   .footer_brosis_content_text{
     font-size: 20px;
   }
+
+  .brosis_back{
+    margin-bottom: -20%;
+    margin-left: -10px;
+    padding-top: -12%;
+    max-width: 137px;
+    max-height: 42px;
+  }
+
+  .brosis_back>.back_text{
+    font-size: 16px;
+    padding-left: 7px;
+    padding-top: 7%;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -989,6 +1062,21 @@ footer.is-changed .footer_sns_list {
     font-size: 30px;
     margin-left: 42%;
   }
+
+  .brosis_back{
+    margin-bottom: -20%;
+    margin-left: -10px;
+    padding-top: -12%;
+    max-width: 137px;
+    max-height: 42px;
+  }
+
+  .brosis_back>.back_text{
+    font-size: 16px;
+    padding-left: 7px;
+    padding-top: 7%;
+  }
+
   /* バースデー */
   .birthday_hero_catch {
     margin-top: 30%;
