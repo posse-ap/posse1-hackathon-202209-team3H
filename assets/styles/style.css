@@ -613,8 +613,8 @@ body{
   transition: .3s ease-in-out;
 }
 .hover .hover-text .text1 {
-  font-size: 22px;
-  padding: 20% 15%;
+  font-size: 15px;
+  padding: 20% 10%;
 }
 a.text1{
   font-size: 22px;
