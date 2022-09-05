@@ -242,7 +242,6 @@ body{
   line-height: 1.3;
   border-right: solid 1px #4682B4;
 }
-
 .birthday_content_manth {
   margin: 10px 10px;
 }
@@ -768,6 +767,9 @@ footer.is-changed .footer_sns_list {
     top: 150px;
     left: 0;
     right: 0;
+  }
+  .top_body.is-changed{
+    background: #fff;
   }
 
   /* トップページ */

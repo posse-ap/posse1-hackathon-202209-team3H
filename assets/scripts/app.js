@@ -1,11 +1,13 @@
 'use strict';
 {
   // ハンバーガーメニュー
+  const topBody = document.getElementById('js-topBody')
   const header = document.getElementById('js-header');
   const headerHamburger = document.getElementById('js-headerHamburger');
   const main = document.getElementById('js-main');
   const footer = document.getElementById('js-footer');
   headerHamburger.addEventListener('click', () => {
+    topBody.classList.toggle('is-changed')
     header.classList.toggle('is-open');
     main.classList.toggle('hide');
     footer.classList.toggle('is-changed');
