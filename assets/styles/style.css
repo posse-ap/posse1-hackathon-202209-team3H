@@ -408,6 +408,7 @@ body{
   width: 100px;
   height: 60px;
   text-align: center;
+  color: #333;
   /* margin-left: 10px; */
   /* background-color: #a4c6ff; */
 }
@@ -415,13 +416,18 @@ body{
 .birthday_content_manth_name {
   width: 500px;
   height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  font-size: 130%;
+  color: #333;
   /* font-size: 30px; */
   /* background-color: #a4c6ff; */
 }
 
 .birthday_content_manth_text_img {
-  background-color: bisque;
+  background-color: #FFF5EE	;
   display: flex;
 }
 
