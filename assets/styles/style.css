@@ -572,7 +572,6 @@ body{
 
 /* いべんと */
 .event_hero{
-  padding: 0 24px;
   margin: 0 auto;
   padding-top: 100px;
   max-width: 1200px;
@@ -602,11 +601,12 @@ body{
   padding: 0 24px;
   margin: 0 auto;
   max-width: 1200px;
-  width: 100%;
+  /* width: 100%; */
   /* height: 70px; */
   border-radius: 30px;
   background-color: #a4c6ff	;
   text-align: center;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -636,16 +636,20 @@ body{
 .event_content_item_box{
   background-color: #a4c6ff;
   display: flex;
-
+  margin-top: 3px;
+  border-radius: 30px 0 0 0;
 }
-.event_content_day{
+.event_content_day_box{
   width: 100px;
+  height: 60px;
   text-align: center;
-  /* margin-left: 10px; */
+  margin-left: 5px;
   background-color: #a4c6ff;
+  border-radius: 30px 0 0 0;
 }
-.event_content_name{
+.event_content_name_box{
   width: 500px;
+  height: 60px;
   text-align: center;
   /* font-size: 30px; */
   background-color: #a4c6ff;
@@ -667,12 +671,12 @@ body{
 }
 
 .event_content_img_box{
-  display: flex;
   width: 70%;
-  height: 300px;
+  height: 150px;
   display: flex;
   flex-wrap: wrap;
   overflow: auto;
+  margin: auto 0;
 }
 .event_content_text{
   margin: 10px 10px;
@@ -828,119 +832,115 @@ footer.is-changed .footer_sns_list {
     right: 0;
   }
 
-  /* バースデー */
-
-  @media screen and (max-width: 720px) {
-    /* トップページ */
-    .hero_title_label{
-      text-align: center;
-    }
-
-    .hero_title_inline{
-      word-break: keep-all;
-    }
-
-    .hero_title_name{
-      padding-top: 2%;
-      margin-left: 35%;
-    }
-
-    .top_content_text_birthday{
-      margin-left: 55%;
-    }
-
-    .top_content_speach{
-      padding-left: 2%;
-      padding-right: 8%;
-    }
-
-    .top_content_text_speach{
-      margin-right: 45%;
-    }
-
-    .top_content_event{
-      padding-left: 8%;
-      padding-right: 2%;
-    }
-
-    .top_content_text_event{
-      font-size: 40px;
-      margin-left: 40%;
-    }
-
-    /* バースデー */
-    .birthday_hero_catch {
-      margin-top: 30%;
-      /* font-size: 80px; */
-      justify-content: center;
-      /* margin-left: auto; */
-      width: 100%;
-    }
-
-    .birthday_content_manth_list {
-      margin-bottom: 10%;
-      justify-content: space-between;
-      margin-left: 5%;
-      margin-right: 5%;
-      width: auto;
-      height: auto;
-    }
-
-    .birthday_content_manth_list_inner {
-      font-size: 60px;
-      word-break: normal;
-    }
-
-    .birthday_content_manth_text {
-      max-height: 120px;
-    }
-
-    /* スピーチ */
-    .speech_hero_catch{
-      font-size: 50px;
-    }
-    .speech_content_guideline_list{
-      font-size: 15px;
-    }
-    .speech_content_title{
-      font-size: 30px;
-    }
-    .speech_content_text{
-      max-height: 190px;
-    }
-
-    /* いいねボタン */
-    .content_like{
-      margin-right: 10px;
-    }
-
-    /* イベント */
-    .event_hero{
-      padding: 0;
-    }
-
-    .event_hero_catch{
-      margin-top: 15%;
-      margin-left: 6%;
-    }
-
-    .event_content_month_list{
-      padding: 3%;
-    }
-
-    .event_content_box{
-      margin-left: 2%;
-      margin-right: -4%;
-    }
-
-    /* フッター */
-    .footer_fixed_buttons {
-      display: none;
-    }
-
+  /* トップページ */
+  .hero_title_label{
+    text-align: center;
   }
 
-  @media screen and (max-width: 480px) {
+  .hero_title_inline{
+    word-break: keep-all;
+  }
+
+  .hero_title_name{
+    padding-top: 2%;
+    margin-left: 35%;
+  }
+
+  .top_content_text_birthday{
+    margin-left: 55%;
+  }
+
+  .top_content_speach{
+    padding-left: 2%;
+    padding-right: 8%;
+  }
+
+  .top_content_event{
+    padding-left: 8%;
+    padding-right: 2%;
+  }
+
+  .top_content_text_event{
+    font-size: 40px;
+    margin-left: 40%;
+  }
+
+  /* バースデー */
+  .birthday_hero_catch {
+    margin-top: 30%;
+    /* font-size: 80px; */
+    justify-content: center;
+    /* margin-left: auto; */
+    width: 100%;
+  }
+
+  .birthday_content_manth_list {
+    margin-bottom: 10%;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: auto;
+    height: auto;
+  }
+
+  .birthday_content_manth_list_inner {
+    font-size: 60px;
+    word-break: normal;
+  }
+  .birthday_content_manth_text {
+    max-height: 120px;
+  }
+
+  /* スピーチ */
+  .speech_hero_catch{
+    font-size: 50px;
+  }
+  .speech_content_guideline_list{
+    font-size: 15px;
+  }
+  .speech_content_title{
+    font-size: 30px;
+  }
+  .speech_content_text{
+    max-height: 190px;
+  }
+
+  /* いいねボタン */
+  .content_like{
+    margin-right: 10px;
+  }
+
+   /* イベント */
+  .event_hero{
+    padding: 0;
+  }
+
+  .event_hero_catch{
+    margin-top: 15%;
+    font-size: 50px;
+  }
+
+  .event_content_month_list{
+    padding: 3%;
+  }
+
+  .event_content_img_box{
+    height: auto;
+    margin: auto 0;
+  }
+
+    /* .event_content_box{
+      margin-left: 2%;
+      margin-right: -4%;
+    } */
+
+  /* フッター */
+  .footer_fixed_buttons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
 
   /* トップページ */
   .hero_title_label{
@@ -950,7 +950,7 @@ footer.is-changed .footer_sns_list {
 
   .hero_title_inline{
     word-break: keep-all;
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .hero_title_name{
@@ -974,55 +974,38 @@ footer.is-changed .footer_sns_list {
     margin-left: 42%;
   }
 
-    /* バースデー */
-    .birthday_hero_catch {
-      margin-top: 30%;
-      font-size: 70px;
-    }
+  /* バースデー */
+  .birthday_hero_catch {
+    margin-top: 30%;
+    font-size: 70px;
+  }
 
-    .birthday_hero_text_box {
-      justify-content: space-between;
-    }
+  .birthday_hero_text_box {
+    justify-content: space-between;
+  }
 
-    .birthday_content_manth_list {
-      margin-bottom: 10%;
-      justify-content: space-between;
-      width: auto;
-      height: auto;
-    }
+  .birthday_content_manth_list {
+    margin-bottom: 10%;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+  }
 
-    .birthday_content_manth_list_inner {
-      font-size: 36px;
-      word-break: normal;
-    }
+  .birthday_content_manth_list_inner {
+    font-size: 36px;
+    word-break: normal;
+  }
 
-    /* 100秒 */
+  /* 100秒 */
 
-
-    /* イベント */
-    .event_hero{
-      width: 620px;
-      padding: 0;
-      margin-top: 20%;
-    }
-
-    .event_hero_catch{
-      font-size: 55px;
-      margin-left: 8%;
-      margin-right: auto;
-    }
-
-    .event_content_box{
-      margin-left: 3%;
-      margin-right: -3%;
-    }
-
-    .like_button{
-      /* padding-right: 2%; */
-    }
+  /* イベント */
+  .event_hero{
+    /* width: 620px; */
+    padding: 0;
+    margin-top: 20%;
+  }
 
 
     /* ブラシス */
 
-  }
 }
