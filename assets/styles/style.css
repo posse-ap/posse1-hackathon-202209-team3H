@@ -1,13 +1,11 @@
 a {
   text-decoration: none;
 }
-
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 header {
   display: flex;
   align-items: center;
@@ -21,14 +19,12 @@ header {
   z-index: 20;
   top: 0;
 }
-
 .header_sns {
   display: flex;
   margin-left: auto;
   align-items: center;
   gap: 16px;
 }
-
 .sns_instagram,
 .sns_twitter {
   align-items: center;
@@ -41,152 +37,52 @@ header {
   width: 50px;
   justify-content: center;
 }
-
 .icon_twitter {
   width: 25px;
   height: 20px;
 }
-
 .icon_instagram {
   width: 24px;
   height: 24px;
 }
-
 .header_hamburger {
   display: none;
 }
-
 .menu {
   display: none;
 }
-
 .menu_item {
   text-align: center;
   font-size: 35px;
   margin-bottom: 15px;
 }
-
 .menu_item_link {
   color: #0071bc;
 }
-
-/* スマホ・タブレットサイズ */
-@media (max-width: 720px) {
-  .header_sns {
-    display: none;
-  }
-
-  .header_hamburger {
-    display: block;
-    height: 40px;
-    position: fixed;
-    right: 19px;
-    width: 40px;
-    z-index: 100;
-    background-color: #fff;
-    border: #fff;
-  }
-
-  .header_hamburger::before,
-  .header_hamburger::after {
-    background-color: #333;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    transition: transform 0.4s, top 0.4s;
-    width: 34px;
-  }
-
-  .header_hamburger::before {
-    top: 12px;
-    transform: translate(-50%, 0);
-  }
-
-  .header_hamburger::after {
-    top: 27px;
-    transform: translate(-50%, 0);
-  }
-
-  header.is-open .header_hamburger::before {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-
-  header.is-open .header_hamburger::after {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-
-  header.is-open .menu {
-    display: block;
-    position: absolute;
-    top: 150px;
-    left: 0;
-    right: 0;
-  }
-}
-
 .hide {
   display: none;
 }
-
 body{
   font-family: "Noto Sans JP", sans-serif;
 }
 
+/* トップページ */
 .top_body{
   background:linear-gradient(#1e90ff, #f0ffff);
-
-  /* animation: cloud 25s linear infinite;
-  background: url(../img/top_img/E10F6C37-533D-4973-B8EC-B8DDE0C370D6.png),
-    linear-gradient(#bbe4fa, hsl(171, 40%, 91%));
-  background-position-x: 0%;
-  background-position-y: 35%;
-  background-repeat: repeat-x;
-  background-size: 800px auto;
-  height: 560px;
 }
-/* 2. keyframeを使って、雲が流れるように。 */
-/* @keyframes cloud {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    background-position-x: 800px;
-  } */ 
-}
-
-/* トップページ */
-
 .top_content {
   margin: 10% auto;
 }
-
-.top_hero {
-  /* display: flex; */
-  /* margin: auto 10%; */
-  /* margin-bottom: 20%; */
-  /* justify-content: center; */
-}
-
 .top_hero_title {
   margin-top: 30%;
   display: flex;
   flex-flow: column;
-  /* position: absolute; */
-
 }
-
 .top_hero >h2{
   margin-top: 7%;
   display: flex;
   flex-flow: column;
-  /* position: absolute; */
-
 }
-
 .hero_title_label{
   font-size: 60px;
   margin-bottom: 5%;
@@ -195,15 +91,11 @@ body{
   color: #fff;
   text-shadow: 2px 4px 3px gainsboro;
 }
-
 .hero_title_inline{
   font-size: 25px;
-  /* margin-left: 38%;
-  margin-right: -12%; */
   text-align: center;
   text-shadow: 2px 3px 3px gray;
 }
-
 .hero_title_name{
   font-size: 15px;
   font-weight: bold;
@@ -211,18 +103,12 @@ body{
   margin-top: 2%;
   text-shadow: 2px 3px 3px gray;
 }
-
 .top_content {
-  /* display: inline-block; */
   gap: 20px;
-  /* padding-bottom: 5%; */
-  /* justify-content: center; */
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  /* padding-left: 2%; */
 }
-
 .top_content_text {
   color: aquamarine;
   font-weight: bold;
@@ -232,44 +118,35 @@ body{
   padding: 40px 0;
   text-align: center;
 }
-
 .top_content_text_birthday {
   font-weight: bold;
   font-size: 50px;
   text-shadow: 1px 1px 2px aqua;
   align-items: center;
-
   font-weight: bold;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px #888;
   padding: 0 0 10px;
-  /* margin-right: 20%; */
 }
-
 .top_content_text_speach {
   font-weight: bold;
   font-size: 45px;
   text-shadow: 1px 1px 2px aqua;
   align-items: center;
-
   font-weight: bold;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px #888;
   padding: 0 0 10px;
-  /* margin-right: 20%; */
 }
-
 .top_content_text_event {
   font-weight: bold;
   font-size: 42px;
   text-shadow: 1px 1px 2px aqua;
   align-items: center;
-
   font-weight: bold;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px #888;
   padding: 0 0 10px;
-  /* margin-right: 20%; */
 }
 .top_content_birthday,.top_content_speach,.top_content_event {
   transition-duration: .4s;
@@ -277,41 +154,30 @@ body{
 .top_content_birthday:hover,.top_content_speach:hover,.top_content_event:hover {
   transform: scale(1.1);
 }
-
 .top_content_birthday{
   background-image: url(../img/top_img/S__25853977.jpg);
   padding: 9.5%;
-  /* font-size: 30px; */
-  /* max-width: 100%;
-  max-height: 100%; */
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
   margin: 3%;
 }
-
 .top_content_speach{
   background-image: url(../img/top_img/BB3E3968-9C59-46DF-8A4A-3E0B22126F60.jpg);
   padding: 8%;
-  /* max-width: 100%;
-  max-height: 100%; */
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
   margin: 3%;
 }
-
 .top_content_event{
   background-image: url(../img/top_img/DX\ 集合写真.jpg);
   padding: 10%;
-  /* max-width: 100%;
-  max-height: 100%; */
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
   margin: 3%;
 }
-
 
 /* Birthday */
 .birthday_hero {
@@ -322,10 +188,7 @@ body{
   align-items: center;
   justify-content: space-around;
   max-width: 1200px;
-  /* width: 100%; */
-  /* height: 100px; */
 }
-
 .birthday_hero_catch_inner {
   max-width: 500px;
   height: 100px;
@@ -336,20 +199,16 @@ body{
   align-items: center;
   margin: 10% auto;
 }
-
 .birthday_hero_catch {
   font-size: 100px;
   font-weight: bold;
-  /* margin-top: 10%; */
   color: pink;
 }
-
 .birthday_hero_text_box {
   border-radius: 10px;
   background-color: #fff;
   margin: 0 auto;
 }
-
 .birthday_hero_text {
   margin-top: 0;
   font-size: 20px;
@@ -358,12 +217,10 @@ body{
   color: lightpink;
   justify-content: center;
 }
-
 /* ここからcontent */
 .birthday_content {
   margin-top: 60px;
 }
-
 .birthday_content_manth_list {
   padding: 0 24px;
   margin: 0 auto;
@@ -376,7 +233,6 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 .birthday_content_manth_list_inner {
   margin: 10px 10px;
   color: #fff;
@@ -387,39 +243,25 @@ body{
   border-right: solid 1px #4682B4;
 }
 
-
 .birthday_content_manth {
   margin: 10px 10px;
 }
-
-
-.birthday_content_manth_box {
-  /* background-color: rgb(254, 254, 254); */
-}
-
 .birthday_content_manth_title {
   font-size: 60px;
-  /* background-color: #fff; */
-  /* border: solid 1px #666; */
   color: #a4c6ff;
 }
-
 .birthday_content_manth_item_box {
   background-color: #a4c6ff;
   display: flex;
   margin-top: 3px;
   border-radius: 30px 0 0 0;
 }
-
 .birthday_content_manth_day {
   width: 100px;
   height: 60px;
   text-align: center;
   color: #333;
-  /* margin-left: 10px; */
-  /* background-color: #a4c6ff; */
 }
-
 .birthday_content_manth_name {
   width: 500px;
   height: 60px;
@@ -429,15 +271,11 @@ body{
   text-align: center;
   font-size: 130%;
   color: #333;
-  /* font-size: 30px; */
-  /* background-color: #a4c6ff; */
 }
-
 .birthday_content_manth_text_img {
   background-color: #FFF5EE	;
   display: flex;
 }
-
 .birthday_content_manth_img {
   width: 31%;
   height: 30%;
@@ -449,21 +287,18 @@ body{
 .birthday_content_manth_img:hover {
   transform: scale(1.1);
 }
-
 .birthday_content_manth_text {
   height: 30%;
   margin: 10px 10px;
   overflow: auto;
   max-height: 250px;
 }
-
 .birthday_content_manth_text_from {
   font-size: 14px;
   margin-left: 10px;
 }
 
 /* 100秒スピーチ */
-
 .speech_hero {
   padding: 0;
   margin: 0 auto;
@@ -472,7 +307,6 @@ body{
   background-image: url(../img/100秒スピーチ/);
   background-color: #fff;
 }
-
 .speech_hero_catch {
   font-size: 70px;
   font-weight: bold;
@@ -487,11 +321,9 @@ body{
   color: lightpink;
   justify-content: center;
 }
-
 .speech_content {
   margin-top: 60px;
 }
-
 .speech_content_guidelines_list {
   padding: 5px 24px;
   margin: 0 auto;
@@ -512,29 +344,19 @@ body{
   line-height: 1.3;
   display: block;
 }
-
 .speech_content_inner {
   margin: 10px 10px;
 }
-
-.speech_content_box {
-  /* background-color: rgb(254, 254, 254); */
-}
-
 .speech_content_title {
   font-size: 40px;
-  /* background-color: #fff; */
-  /* border: solid 1px #666; */
   color: #a4c6ff;
 }
-
 .speech_content_item_box {
   background-color: #a4c6ff;
   display: flex;
   margin-top: 3px;
   border-radius: 30px 0 0 0;
 }
-
 .speech_content_day {
   width: 100px;
   height: 60px;
@@ -543,33 +365,27 @@ body{
   background-color: #a4c6ff;
   border-radius: 30px 0 0 0;
 }
-
 .speech_content_name {
   width: 500px;
   height: 60px;
   text-align: center;
-  /* font-size: 30px; */
   background-color: #a4c6ff;
 }
-
 .speech_content_text_img {
   background-color: bisque;
   display: flex;
 }
-
 .speech_content_img {
   width: 31%;
   height: 30%;
   margin: auto 0;
 }
-
 .speech_content_text {
   margin: 10px 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   overflow: auto;
   max-height:360px;
 }
-
 
 /* いべんと */
 .event_hero{
@@ -581,20 +397,17 @@ body{
 .event_hero_catch{
   font-size: 70px;
   font-weight: bold;
-  /* margin-top: 10%; */
   color: pink;
   text-align: center;
   justify-content: center;
 }
 .event_hero_text{
-  /* margin-top: 0; */
   font-size: 20px;
   font-weight: bold;
   text-align: center;
   color: lightpink;
   justify-content: center;
 }
-
 .event_content{
   margin-top: 60px;
 }
@@ -602,8 +415,6 @@ body{
   padding: 0 24px;
   margin: 0 auto;
   max-width: 1200px;
-  /* width: 100%; */
-  /* height: 70px; */
   border-radius: 30px;
   background-color: #a4c6ff	;
   text-align: center;
@@ -621,7 +432,6 @@ body{
   line-height: 1.3;
   border-right: solid 1px #4682B4;
 }
-
 .event_content_inner{
   margin: 10px 10px;
 }
@@ -631,7 +441,6 @@ body{
 .event_content_title{
   font-size: 60px;
   background-color: #fff;
-  /* border: solid 1px #666; */
   color: #a4c6ff;
 }
 .event_content_item_box{
@@ -652,25 +461,12 @@ body{
   width: 500px;
   height: 60px;
   text-align: center;
-  /* font-size: 30px; */
   background-color: #a4c6ff;
 }
-
 .event_content_text_img{
   background-color: bisque;
   display: flex;
 }
-.event_content_img{
-  width: 50%;
-  height: auto;
-}
-.event_content_img {
-  transition-duration: .4s;
-}
-.event_content_img:hover {
-  transform: scale(1.1);
-}
-
 .event_content_img_box{
   width: 70%;
   height: 150px;
@@ -678,6 +474,14 @@ body{
   flex-wrap: wrap;
   overflow: auto;
   margin: auto 0;
+}
+.event_content_img{
+  max-height: 150px;
+  width: auto;
+  transition-duration: .4s;
+}
+.event_content_img:hover {
+  transform: scale(1.1);
 }
 .event_content_text{
   margin: 10px 10px;
@@ -846,59 +650,47 @@ body{
   right: 16px;
   left: auto;
 }
-
 .footer_fixed_button {
   align-items: center;
   background-color: #008BBB;
   padding: 10px;
   margin-top: 3px;
   text-align: center;
-  /* border-bottom: solid 3px #fff; */
   border-radius: 30px;
 }
-
 .footer_fixed_link {
   color: #fff;
   font-weight: 500;
 }
-
 .footer_inner {
   margin-top: 100px;
   margin-bottom: 25px;
   text-align: center;
 }
-
 .footer_sns {
   text-align: center;
   align-items: center;
 }
-
 .footer_inner {
   text-align: center;
-
 }
-
 .footer_sns {
   text-align: center;
   align-items: center;
 }
-
 .footer_sns_list {
   display: flex;
   justify-content: center;
   gap: 16px;
 }
-
 .footer_copyright {
   text-align: center;
 }
-
 footer.is-changed .footer_fixed_buttons,
 footer.is-changed .footer_logo,
-footer.is-changed .footer_copyright {
+footer.is-changed .footer_copyright, footer.is-changed .brosis_content {
   display: none;
 }
-
 footer.is-changed .footer_sns_list {
   position: absolute;
   bottom: 100px;
@@ -906,14 +698,43 @@ footer.is-changed .footer_sns_list {
   transform: translate(-50%);
 }
 
+/* ブラシス */
+.brosis_content{
+  bottom: 2%;
+  right: 5%;
+  position: fixed;
+  border-style: solid;
+  border-width: 0;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 4px 4px 20px rgb(0 0 0 / 15%);
+  padding: 14px 18px 14px 20px;
+  background-color: #ff8c00;
+}
+.brosis_content>img{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: solid 3px #ffd700;
+}
+.brosis_content_text{
+  margin-left: 13px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+  line-height: 1.3;
+  text-align: center;
+  margin: 0;
+}
+
 
 @media screen and (max-width: 720px) {
-
   /* ハンバーガー */
   .header_sns {
     display: none;
   }
-
   .header_hamburger {
     display: block;
     height: 40px;
@@ -924,7 +745,6 @@ footer.is-changed .footer_sns_list {
     background-color: #fff;
     border: #fff;
   }
-
   .header_hamburger::before,
   .header_hamburger::after {
     background-color: #333;
@@ -936,27 +756,22 @@ footer.is-changed .footer_sns_list {
     transition: transform 0.4s, top 0.4s;
     width: 34px;
   }
-
   .header_hamburger::before {
     top: 12px;
     transform: translate(-50%, 0);
   }
-
   .header_hamburger::after {
     top: 27px;
     transform: translate(-50%, 0);
   }
-
   header.is-open .header_hamburger::before {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
   }
-
   header.is-open .header_hamburger::after {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
-
   header.is-open .menu {
     display: block;
     position: absolute;
@@ -969,30 +784,24 @@ footer.is-changed .footer_sns_list {
   .hero_title_label{
     text-align: center;
   }
-
   .hero_title_inline{
     word-break: keep-all;
   }
-
   .hero_title_name{
     padding-top: 2%;
     margin-left: 35%;
   }
-
   .top_content_text_birthday{
     margin-left: 55%;
   }
-
   .top_content_speach{
     padding-left: 2%;
     padding-right: 8%;
   }
-
   .top_content_event{
     padding-left: 8%;
     padding-right: 2%;
   }
-
   .top_content_text_event{
     font-size: 40px;
     margin-left: 40%;
@@ -1001,12 +810,9 @@ footer.is-changed .footer_sns_list {
   /* バースデー */
   .birthday_hero_catch {
     margin-top: 30%;
-    /* font-size: 80px; */
     justify-content: center;
-    /* margin-left: auto; */
     width: 100%;
   }
-
   .birthday_content_manth_list {
     margin-bottom: 10%;
     justify-content: space-between;
@@ -1015,7 +821,6 @@ footer.is-changed .footer_sns_list {
     width: auto;
     height: auto;
   }
-
   .birthday_content_manth_list_inner {
     font-size: 60px;
     word-break: normal;
@@ -1047,98 +852,86 @@ footer.is-changed .footer_sns_list {
   .event_hero{
     padding: 0;
   }
-
   .event_hero_catch{
     margin-top: 15%;
     font-size: 50px;
   }
-
   .event_content_month_list{
     padding: 3%;
   }
-
   .event_content_img_box{
-    height: auto;
+    max-height: 150px;
     margin: auto 0;
   }
-
-    /* .event_content_box{
-      margin-left: 2%;
-      margin-right: -4%;
-    } */
 
   /* フッター */
   .footer_fixed_buttons {
     display: none;
   }
+
+  /* ブラシス */
+  .brosis_content{
+    padding: 10px;
+  }
+  .brosis_content img{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+  }
+  .brosis_content_text{
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-
   /* トップページ */
   .hero_title_label{
     margin-top: 10%;
     font-size: 50px;
   }
-
   .hero_title_inline{
     word-break: keep-all;
     font-size: 17px;
   }
-
   .hero_title_name{
     font-size: 10px;
     margin-left: 30%;
     padding-top: 2%;
   }
-
   .top_content_text_birthday{
     font-size: 35px;
     margin-left: 55%;
   }
-
   .top_content_text_speach{
     font-size: 30px;
     padding: none;
   }
-
   .top_content_text_event{
     font-size: 30px;
     margin-left: 42%;
   }
-
   /* バースデー */
   .birthday_hero_catch {
     margin-top: 30%;
     font-size: 70px;
   }
-
   .birthday_hero_text_box {
     justify-content: space-between;
   }
-
   .birthday_content_manth_list {
     margin-bottom: 10%;
     justify-content: space-between;
     width: auto;
     height: auto;
   }
-
   .birthday_content_manth_list_inner {
     font-size: 36px;
     word-break: normal;
   }
 
-  /* 100秒 */
-
   /* イベント */
   .event_hero{
-    /* width: 620px; */
     padding: 0;
     margin-top: 20%;
   }
-
-
-    /* ブラシス */
-
 }
