@@ -261,7 +261,7 @@ body{
 
 .top_content_text_event {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 42px;
   text-shadow: 1px 1px 2px aqua;
   align-items: center;
 
@@ -867,7 +867,7 @@ footer.is-changed .footer_sns_list {
       margin-left: 40%;
     }
 
-
+    /* バースデー */
     .birthday_hero_catch {
       margin-top: 30%;
       /* font-size: 80px; */
@@ -948,7 +948,7 @@ footer.is-changed .footer_sns_list {
   }
 
   .hero_title_inline{
-    word-break: break-all;
+    word-break: keep-all;
     font-size: 20px;
   }
 
@@ -969,8 +969,8 @@ footer.is-changed .footer_sns_list {
   }
 
   .top_content_text_event{
-    font-size: 35px;
-    margin-left: 55%;
+    font-size: 30px;
+    margin-left: 42%;
   }
 
     /* バースデー */
