@@ -378,13 +378,13 @@ body{
   letter-spacing: 0.2em;
   font-weight: bold;
   line-height: 1.3;
-  border-right: solid 1px #333;
+  border-right: solid 1px #4682B4;
 }
-
 
 .birthday_content_manth {
   margin: 10px 10px;
 }
+
 
 .birthday_content_manth_box {
   /* background-color: rgb(254, 254, 254); */
@@ -408,6 +408,7 @@ body{
   width: 100px;
   height: 60px;
   text-align: center;
+  color: #333;
   /* margin-left: 10px; */
   /* background-color: #a4c6ff; */
 }
@@ -415,13 +416,18 @@ body{
 .birthday_content_manth_name {
   width: 500px;
   height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  font-size: 130%;
+  color: #333;
   /* font-size: 30px; */
   /* background-color: #a4c6ff; */
 }
 
 .birthday_content_manth_text_img {
-  background-color: bisque;
+  background-color: #FFF5EE	;
   display: flex;
 }
 
@@ -429,6 +435,12 @@ body{
   width: 31%;
   height: 30%;
   margin: auto 0;
+}
+.birthday_content_manth_img {
+  transition-duration: .4s;
+}
+.birthday_content_manth_img:hover {
+  transform: scale(1.1);
 }
 
 .birthday_content_manth_text {
@@ -599,7 +611,7 @@ body{
   letter-spacing: 0.2em;
   font-weight: bold;
   line-height: 1.3;
-  border-right: solid 1px #333;
+  border-right: solid 1px #4682B4;
 }
 
 .event_content_inner{
@@ -639,6 +651,12 @@ body{
 .event_content_img{
   width: 50%;
   height: auto;
+}
+.event_content_img {
+  transition-duration: .4s;
+}
+.event_content_img:hover {
+  transform: scale(1.1);
 }
 
 .event_content_img_box{
