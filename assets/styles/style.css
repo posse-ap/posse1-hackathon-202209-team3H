@@ -372,7 +372,7 @@ body{
   background-color: #a4c6ff;
 }
 .speech_content_text_img {
-  background-color: bisque;
+  background-color: #FFF5EE;
   display: flex;
 }
 .speech_content_img {
@@ -464,15 +464,15 @@ body{
   background-color: #a4c6ff;
 }
 .event_content_text_img{
-  background-color: bisque;
+  background-color: #FFF5EE;
   display: flex;
 }
 .event_content_img_box{
-  width: 70%;
   height: 150px;
+  width: 70%;
   display: flex;
-  flex-wrap: wrap;
-  overflow: auto;
+  overflow-x: auto;
+  white-space: nowrap;
   margin: auto 0;
 }
 .event_content_img{
@@ -480,13 +480,12 @@ body{
   width: auto;
   transition-duration: .4s;
 }
-.event_content_img:hover {
-  transform: scale(1.1);
-}
+
 .event_content_text{
   margin: 10px 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   overflow: auto;
+  width: 30%;
 }
 
 /* いいねボタン */
