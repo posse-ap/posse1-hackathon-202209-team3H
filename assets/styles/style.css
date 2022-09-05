@@ -387,7 +387,6 @@ body{
 }
 .speech_content_text {
   margin: 10px 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   overflow: auto;
   max-height:360px;
 }
@@ -485,7 +484,6 @@ body{
   width: auto;
   transition-duration: .4s;
 }
-
 .event_content_text{
   margin: 10px 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -574,60 +572,74 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* overflow: auto; */
   margin: auto 0;
-  /* background-color: #008BBB; */
 }
-.brosis_content_bro_list_img_box, .brosis_content_sis_list_img_box{
-  /* background-color: #333; */
+/* ホバー */
+.box{
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.hover {
+  position: relative;
   width: 19%;
-  margin: 1px 1px;
+  height:auto;
+  /* margin: 0 auto; */
+  /* padding: 0 1px; */
+}
+.hover .hover-img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+.hover-img img {
+  width: 100%;
+  height: 100%;
+}
+.hover .hover-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0,0,0,0.65);
+  /*透明にして表示させない*/
+  opacity: 0;
+  /*ホバーの動き方*/
+  transition: .3s ease-in-out;
+}
+.hover .hover-text .text1 {
+  font-size: 15px;
+  padding: 20% 10%;
+}
+a.text1{
+  font-size: 22px;
+  /* padding: 20% %; */
+  text-align: center;
   display: block;
+  text-decoration: none;
+  color: #fff;
+}
+/* .hover .hover-text .text2 {
+  font-size: 16px;
+  padding: 0 20px;
+} */
+/*ホバーエフェクト*/
+.hover:hover .hover-text {
+  /*不透明にして表示*/
+  opacity: 1;
+}
+.box{
+  display: flex;
+  width: 1200px;
 }
 .brosis_content_bro_img, .brosis_content_sis_img{
   width: 100%;
   height: auto;
 }
-
-/* ホバー */
-/* .c-bnr.bg {
-  position: relative;
-  overflow: hidden;
-}
-.c-bnr.bg::before,
-.c-bnr.bg::after {
-  content: "";
-  display: block;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  margin: auto;
-  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
-  opacity: 0;
-}
-.c-bnr.bg::before {
-  background: rgba(190,91,70,.6);
-  width: 100%;
-  height: 100%;
-}
-.c-bnr.bg::after {
-  color: #fff;
-  content: "Read More";
-  font-size: 22px;
-  font-weight: bold;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  bottom: 0;
-  right: 0;
-}
-
-.c-bnr.bg:hover::before,
-.c-bnr.bg:hover::after {
-  opacity: 1;
-} */
 
 .brosis_content_inner{
   margin: 10px 10px;
@@ -684,7 +696,6 @@ body{
 .brosis_content_img:hover {
   transform: scale(1.1);
 }
-
 .brosis_content_img_box{
   width: 100%;
   height: auto;
@@ -692,7 +703,6 @@ body{
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 .brosis_content_text{
   margin: 10px 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
