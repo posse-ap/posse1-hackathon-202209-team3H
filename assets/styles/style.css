@@ -468,12 +468,14 @@ body{
   display: flex;
 }
 .event_content_img_box{
-  width: 70%;
+  /* width: 70%; */
   height: 150px;
   display: flex;
-  flex-wrap: wrap;
-  overflow: auto;
+  /* flex-wrap: wrap; */
+  overflow-x: auto;
+  /* overflow: hidden; */
   margin: auto 0;
+  background-color: #00fa9a;
 }
 .event_content_img{
   max-height: 150px;
