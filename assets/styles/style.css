@@ -791,8 +791,9 @@ footer.is-changed .footer_sns_list {
     margin-left: 55%;
   }
   .top_content_speach{
-    padding-left: 2%;
-    padding-right: 8%;
+    padding-left: 0;
+    padding-right: 45%;
+    font-size: 45px;
   }
   .top_content_event{
     padding-left: 8%;
@@ -903,8 +904,12 @@ footer.is-changed .footer_sns_list {
   }
   .top_content_text_speach{
     font-size: 30px;
-    padding: none;
   }
+  .top_content_speach{
+    padding-left: 0;
+    padding-right: 48%;
+  }
+
   .top_content_text_event{
     font-size: 30px;
     margin-left: 42%;
