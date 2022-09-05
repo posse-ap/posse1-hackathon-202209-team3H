@@ -744,6 +744,41 @@ footer.is-changed .footer_sns_list {
   transform: translate(-50%);
 }
 
+/* ブラシス */
+.brosis_content{
+  bottom: 16px;
+  right: 5%;
+  position: fixed;
+  border-style: solid;
+  border-width: 0;
+  box-sizing: border-box;
+  display: block;
+  text-align: right;
+  /* padding-left: 2%; */
+}
+
+.brosis_content> a{
+  border-radius: 16px;
+  box-shadow: 4px 4px 20px rgb(0 0 0 / 15%);
+  padding: 22px 20px 22px 24px;
+  background-color: #008BBB;
+  padding: 25% 70%;
+  margin-left: 2%;
+  /* justify-content: flex-end; */
+}
+
+.brosis_content_text{
+  margin-left: 13px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+  line-height: 1.3;
+  text-align: left;
+  margin: 0;
+  /* text-align: right; */
+}
+
 
 @media screen and (max-width: 720px) {
 
