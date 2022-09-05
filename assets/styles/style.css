@@ -924,7 +924,7 @@ footer.is-changed .footer_sns_list {
   }
 
   .hero_title_inline{
-    word-break: break-all;
+    word-break: keep-all;
     font-size: 20px;
   }
 
