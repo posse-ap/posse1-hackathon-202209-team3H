@@ -911,8 +911,25 @@ footer.is-changed .footer_sns_list {
 
 
     /* イベント */
+    .event_hero{
+      width: 620px;
+      padding: 0;
+      margin-top: 20%;
+    }
+
     .event_hero_catch{
       font-size: 55px;
+      margin-left: 8%;
+      margin-right: auto;
+    }
+
+    .event_content_box{
+      margin-left: 3%;
+      margin-right: -3%;
+    }
+
+    .like_button{
+      /* padding-right: 2%; */
     }
 
 
