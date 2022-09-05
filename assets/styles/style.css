@@ -400,7 +400,8 @@ body{
 .birthday_content_manth_item_box {
   background-color: #a4c6ff;
   display: flex;
-
+  margin-top: 3px;
+  border-radius: 30px 0 0 0;
 }
 
 .birthday_content_manth_day {
@@ -408,7 +409,7 @@ body{
   height: 60px;
   text-align: center;
   /* margin-left: 10px; */
-  background-color: #a4c6ff;
+  /* background-color: #a4c6ff; */
 }
 
 .birthday_content_manth_name {
@@ -416,7 +417,7 @@ body{
   height: 60px;
   text-align: center;
   /* font-size: 30px; */
-  background-color: #a4c6ff;
+  /* background-color: #a4c6ff; */
 }
 
 .birthday_content_manth_text_img {
