@@ -824,6 +824,44 @@ footer.is-changed .footer_sns_list {
   /* バースデー */
 
   @media screen and (max-width: 720px) {
+    /* トップページ */
+    .hero_title_label{
+      text-align: center;
+    }
+
+    .hero_title_inline{
+      word-break: keep-all;
+    }
+
+    .hero_title_name{
+      padding-top: 2%;
+      margin-left: 35%;
+    }
+
+    .top_content_text_birthday{
+      margin-left: 55%;
+    }
+
+    .top_content_speach{
+      padding-left: 2%;
+      padding-right: 8%;
+    }
+
+    .top_content_text_speach{
+      margin-right: 45%;
+    }
+
+    .top_content_event{
+      padding-left: 8%;
+      padding-right: 2%;
+    }
+
+    .top_content_text_event{
+      font-size: 40px;
+      margin-left: 40%;
+    }
+
+
     .birthday_hero_catch {
       margin-top: 30%;
       /* font-size: 80px; */
