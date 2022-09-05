@@ -1,13 +1,11 @@
 a {
   text-decoration: none;
 }
-
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 header {
   display: flex;
   align-items: center;
@@ -21,14 +19,12 @@ header {
   z-index: 20;
   top: 0;
 }
-
 .header_sns {
   display: flex;
   margin-left: auto;
   align-items: center;
   gap: 16px;
 }
-
 .sns_instagram,
 .sns_twitter {
   align-items: center;
@@ -41,41 +37,33 @@ header {
   width: 50px;
   justify-content: center;
 }
-
 .icon_twitter {
   width: 25px;
   height: 20px;
 }
-
 .icon_instagram {
   width: 24px;
   height: 24px;
 }
-
 .header_hamburger {
   display: none;
 }
-
 .menu {
   display: none;
 }
-
 .menu_item {
   text-align: center;
   font-size: 35px;
   margin-bottom: 15px;
 }
-
 .menu_item_link {
   color: #0071bc;
 }
-
 /* スマホ・タブレットサイズ */
 @media (max-width: 720px) {
   .header_sns {
     display: none;
   }
-
   .header_hamburger {
     display: block;
     height: 40px;
@@ -86,7 +74,6 @@ header {
     background-color: #fff;
     border: #fff;
   }
-
   .header_hamburger::before,
   .header_hamburger::after {
     background-color: #333;
@@ -98,27 +85,22 @@ header {
     transition: transform 0.4s, top 0.4s;
     width: 34px;
   }
-
   .header_hamburger::before {
     top: 12px;
     transform: translate(-50%, 0);
   }
-
   .header_hamburger::after {
     top: 27px;
     transform: translate(-50%, 0);
   }
-
   header.is-open .header_hamburger::before {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
   }
-
   header.is-open .header_hamburger::after {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
-
   header.is-open .menu {
     display: block;
     position: absolute;
@@ -127,66 +109,30 @@ header {
     right: 0;
   }
 }
-
 .hide {
   display: none;
 }
-
 body{
   font-family: "Noto Sans JP", sans-serif;
 }
 
+/* トップページ */
 .top_body{
   background:linear-gradient(#1e90ff, #f0ffff);
-
-  /* animation: cloud 25s linear infinite;
-  background: url(../img/top_img/E10F6C37-533D-4973-B8EC-B8DDE0C370D6.png),
-    linear-gradient(#bbe4fa, hsl(171, 40%, 91%));
-  background-position-x: 0%;
-  background-position-y: 35%;
-  background-repeat: repeat-x;
-  background-size: 800px auto;
-  height: 560px;
 }
-/* 2. keyframeを使って、雲が流れるように。 */
-/* @keyframes cloud {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    background-position-x: 800px;
-  } */ 
-}
-
-/* トップページ */
-
 .top_content {
   margin: 10% auto;
 }
-
-.top_hero {
-  /* display: flex; */
-  /* margin: auto 10%; */
-  /* margin-bottom: 20%; */
-  /* justify-content: center; */
-}
-
 .top_hero_title {
   margin-top: 30%;
   display: flex;
   flex-flow: column;
-  /* position: absolute; */
-
 }
-
 .top_hero >h2{
   margin-top: 7%;
   display: flex;
   flex-flow: column;
-  /* position: absolute; */
-
 }
-
 .hero_title_label{
   font-size: 60px;
   margin-bottom: 5%;
@@ -195,15 +141,11 @@ body{
   color: #fff;
   text-shadow: 2px 4px 3px gainsboro;
 }
-
 .hero_title_inline{
   font-size: 25px;
-  /* margin-left: 38%;
-  margin-right: -12%; */
   text-align: center;
   text-shadow: 2px 3px 3px gray;
 }
-
 .hero_title_name{
   font-size: 15px;
   font-weight: bold;
@@ -211,18 +153,12 @@ body{
   margin-top: 2%;
   text-shadow: 2px 3px 3px gray;
 }
-
 .top_content {
-  /* display: inline-block; */
   gap: 20px;
-  /* padding-bottom: 5%; */
-  /* justify-content: center; */
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  /* padding-left: 2%; */
 }
-
 .top_content_text {
   color: aquamarine;
   font-weight: bold;
@@ -232,44 +168,35 @@ body{
   padding: 40px 0;
   text-align: center;
 }
-
 .top_content_text_birthday {
   font-weight: bold;
   font-size: 50px;
   text-shadow: 1px 1px 2px aqua;
   align-items: center;
-
   font-weight: bold;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px #888;
   padding: 0 0 10px;
-  /* margin-right: 20%; */
 }
-
 .top_content_text_speach {
   font-weight: bold;
   font-size: 45px;
   text-shadow: 1px 1px 2px aqua;
   align-items: center;
-
   font-weight: bold;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px #888;
   padding: 0 0 10px;
-  /* margin-right: 20%; */
 }
-
 .top_content_text_event {
   font-weight: bold;
   font-size: 42px;
   text-shadow: 1px 1px 2px aqua;
   align-items: center;
-
   font-weight: bold;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px #888;
   padding: 0 0 10px;
-  /* margin-right: 20%; */
 }
 .top_content_birthday,.top_content_speach,.top_content_event {
   transition-duration: .4s;
@@ -277,41 +204,30 @@ body{
 .top_content_birthday:hover,.top_content_speach:hover,.top_content_event:hover {
   transform: scale(1.1);
 }
-
 .top_content_birthday{
   background-image: url(../img/top_img/S__25853977.jpg);
   padding: 9.5%;
-  /* font-size: 30px; */
-  /* max-width: 100%;
-  max-height: 100%; */
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
   margin: 3%;
 }
-
 .top_content_speach{
   background-image: url(../img/top_img/BB3E3968-9C59-46DF-8A4A-3E0B22126F60.jpg);
   padding: 8%;
-  /* max-width: 100%;
-  max-height: 100%; */
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
   margin: 3%;
 }
-
 .top_content_event{
   background-image: url(../img/top_img/DX\ 集合写真.jpg);
   padding: 10%;
-  /* max-width: 100%;
-  max-height: 100%; */
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
   margin: 3%;
 }
-
 
 /* Birthday */
 .birthday_hero {
@@ -657,7 +573,6 @@ body{
   padding: 10px;
   margin-top: 3px;
   text-align: center;
-  /* border-bottom: solid 3px #fff; */
   border-radius: 30px;
 }
 .footer_fixed_link {
@@ -690,7 +605,7 @@ body{
 }
 footer.is-changed .footer_fixed_buttons,
 footer.is-changed .footer_logo,
-footer.is-changed .footer_copyright {
+footer.is-changed .footer_copyright, footer.is-changed .brosis_content {
   display: none;
 }
 footer.is-changed .footer_sns_list {
@@ -709,22 +624,17 @@ footer.is-changed .footer_sns_list {
   border-width: 0;
   box-sizing: border-box;
   display: block;
-
   border-radius: 16px;
   box-shadow: 4px 4px 20px rgb(0 0 0 / 15%);
   padding: 14px 18px 14px 20px;
   background-color: #ff8c00;
-  margin-left: 2%;
-  justify-content: flex-end;
 }
-
 .brosis_content>img{
   width: 110px;
   height: 110px;
   border-radius: 50%;
   border: solid 3px #ffd700;
 }
-
 .brosis_content_text{
   margin-left: 13px;
   color: #fff;
@@ -734,7 +644,6 @@ footer.is-changed .footer_sns_list {
   line-height: 1.3;
   text-align: center;
   margin: 0;
-  /* text-align: right; */
 }
 
 
@@ -818,9 +727,7 @@ footer.is-changed .footer_sns_list {
   /* バースデー */
   .birthday_hero_catch {
     margin-top: 30%;
-    /* font-size: 80px; */
     justify-content: center;
-    /* margin-left: auto; */
     width: 100%;
   }
   .birthday_content_manth_list {
@@ -873,9 +780,23 @@ footer.is-changed .footer_sns_list {
     max-height: 150px;
     margin: auto 0;
   }
+
   /* フッター */
   .footer_fixed_buttons {
     display: none;
+  }
+
+  /* ブラシス */
+  .brosis_content{
+    padding: 10px;
+  }
+  .brosis_content img{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+  }
+  .brosis_content_text{
+    font-size: 20px;
   }
 }
 
@@ -930,7 +851,4 @@ footer.is-changed .footer_sns_list {
     padding: 0;
     margin-top: 20%;
   }
-
-  /* ブラシス */
-
 }
